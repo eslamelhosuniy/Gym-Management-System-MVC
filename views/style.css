@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav{
+    height: 100px;
+    background-color: #FFFFFF;
+   
+}
+nav .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1363;
+    font-family: 'Monument Extended';
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+nav .navbar-brand img{
+    width: 78px;
+    height: 111px;
+}
+
+nav .navbar-nav button{
+    color: #1A1363;
+    background-color: #FDEE21;
+    font-weight: bold;
+    width: 108px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+nav .navbar-nav li{
+    margin: 0 10px;
+    border-radius: 50px;
+    color: #1A1363;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav .navbar-nav li:hover, nav .navbar-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: aliceblue !important;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+nav .nav-link:hover{
+        color: aliceblue;
+}
+@media only screen and (max-width: 990px) {
+    .collapse {
+            margin-top: -30px;
+        }
+    nav .navbar-nav li {
+        margin: 3px 0;
+    }
+    .navbar , .collapse{
+        background-color: rgb(255, 255, 255);
+    }
+    
+           nav .navbar-nav li:hover,
+            nav .navbar-nav button:hover {
+                background-color: rgba(0, 0, 0, 0.808);
+                color: aliceblue !important;
+                padding: 0 5px;
+                text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+            }
+        
+            nav .nav-link:hover {
+                color: aliceblue;
+            }
+}
+
+
+footer .container-fluid{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left: 100px;
+    
+}
+footer .container-fluid div{
+    margin: 0 10px;
+}
+footer .container-fluid div li{
+    margin:  -10px 0;
+}
