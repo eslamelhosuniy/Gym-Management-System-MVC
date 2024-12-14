@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STAMINA FITNESS</title>
+    <link rel="icon" type="image/png" href="./images/Main Logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid h-100 dashBoard">
+      <div class="row">
+        <div class="col-3 dashboard-links">
+          <div class="text-center data">
+            <img src="./images/PersonCircle.png" alt="" />
+            <h3>Administrator Name</h3>
+            <h6>juan.delacruz@gmail.com</h6>
+          </div>
+          <div class="nav">
+            <ul>
+              <li target="dashHome" class="sideButton  "><i class="fa-solid fa-table"></i><span>Dashboard</span></li>
+              <li class="sideButton">
+                <i class="fa-solid fa-house"></i><span>Admin Profile</span>
+              </li>
+              <li target="regeteration" class="sideButton">
+                <i class="fa-regular fa-pen-to-square"></i><span>Registration</span>
+              </li>
+              <li target="plan" class="sideButton active"><i class="fa-solid fa-list-check"></i><span>Plan</span></li>
+              <li class="sideButton">
+                <i class="fa-solid fa-credit-card"></i><span>Payment</span>
+              </li>
+              <li class="sideButton">
+                <i class="fa-solid fa-warehouse"></i><span>Inventory</span>
+              </li>
+              <li class="sideButton">
+                <i class="fa-solid fa-users"></i><span>View Members</span>
+              </li>
+              <li class="sideButton"><i class="fa-solid fa-dumbbell"></i><span>Coaches</span></li>
+              <li class="sideButton"><i class="fa-solid fa-book-open"></i><span>Report</span></li>
+              <li style="margin-top: 30%" class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i
+                ><span>Log out</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 sections">
+          <div class="dashboardNav">
+            <div class="dashboardlogo">
+              <a class="navbar-brand" href="#"
+                ><img src="./images/Main Logo.png" alt="" />
+                <h6>
+                  STAMINA <br />
+                  FITNESS
+                </h6>
+              </a>
+            </div>
+            <div class="notification me-4">
+              <li><a href="#">feedback</a></li>
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+          <div id="dashHome" class="section container dashHome ">
+            <div class="row">
+              <div class="col-12 col-lg-7 me-4">
+                <div class="hello">
+                    <div class="text">
+                    <h6>Welcome Banner, <span>Martell</span></h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.</p>
+                    </div>
+                </div>
+                <div class="statics mt-4">
+                    <div class="row">
+                        <div class="col coaches">
+                            <h4>Coaches</h4>
+                            <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>
+                            <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>
+                            <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>   
+                        </div>
+                        <div id="sales" class="col sales">
+                            <h4>Sales</h4>
+                            <canvas id="salesChart"></canvas>
+                            <h5 class="percent">84%</h5>   
+                        </div>
+                    </div>
+                </div>
+                <div class="active-members">
+
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 h-100">
+                <div id="calendar" class="calender">
+                        <div id="monthYear"></div>
+                        <div id="daysContainer">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                          </div>
+                        </div>
+                        <div class="inventroy">
+                          <h4>inventroy</h4>
+                        </div>
+              </div>
+            </div>
+          </div>
+          <div  id="regeteration" class="section container  regeteration">
+               <div class="text">
+                <h3>Become a Member!</h3>
+                <h1>Register</h1>
+               </div>
+               <div class="regeterationform">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="member-name" class="form-label">Name of Participant</label>
+                    <input type="text" class="form-control" id="member-name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="date-of-join" class="form-label">Date of Join</label>
+                    <input type="date" class="form-control" id="date-of-join">
+                  </div>
+                  <div class="col-6">
+                    <label for="email-address" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email-address">
+                  </div>
+                  <div class="col-6">
+                    <label for="contact-no" class="form-label">Contact No.</label>
+                    <input type="text" class="form-control" id="contact-no">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="plan" class="form-label">Plan</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option value="Month">Month</option>
+                      <option value="3Month">3 Month</option>
+                      <option value="year">Year</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="Price" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="Price">
+                  </div>
+                  <div class="col-12 buttons">
+                    <button type="submit" id="add-member" class="btn btn-primary">Add Membership</button>
+                    <button type="button" id="cancel" class="btn btn-primary">cancel</button>
+                  </div>
+                </form>
+                </div>
+          </div>
+          <div id="plan" class="section plan active">
+            <div class="text mb-5">
+                  <button type="button" id="form-add-plan" class="btn btn-primary">Add plan</button>
+            </div>
+            <div class="planform">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="plan-name" class="form-label">Plan Name</label>
+                  <input type="text" class="form-control" id="plan-name">
+                </div>
+                <div class="col-md-6">
+                  <label for="Validity" class="form-label">Validity</label>
+                  <input type="text" class="form-control" id="Validity">
+                </div>
+                <div class="col-6">
+                  <label for="amount" class="form-label">Amount</label>
+                  <input type="email" class="form-control" id="amount">
+                </div>
+                <div class="col-12 buttons">
+                  <button type="submit" id="add-plan" class="btn btn-primary">Add plan</button>
+                  <button type="button" id="cancel" class="btn btn-primary">cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
