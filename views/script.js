@@ -76,29 +76,38 @@ let sections = document.querySelectorAll(".section");
 buttons.forEach(button => {
     button.addEventListener("click", function () {
         sections.forEach(section => section.classList.remove("active"));
-
+        
         buttons.forEach(btn => btn.classList.remove("active"));
 
-    
         let targetid = button.getAttribute("target");
-       
-
         
         let targetsection = document.getElementById(targetid);
+        
         targetsection.classList.add("active");
+        
         button.classList.add("active");
     });
 });
 
 
+function displayForm(displayButtonId, closeButtonId, formClass) {
+    const displayButton = document.getElementById(displayButtonId);
+    const closeButton = document.getElementById(closeButtonId);
+    const form = document.getElementsByClassName(formClass)[0];
 
-let displayAddPlan =document.getElementById("form-add-plan")
-let planform =document.getElementsByClassName("planform")[0]
-displayAddPlan.addEventListener("click", () => {
-    if (planform.style.display === "flex") {
-        planform.style.display = "none"; 
-    } else {
-        planform.style.display = "flex"; 
-    }
-});
+    displayButton.addEventListener("click", () => {
+        form.style.display = form.style.display === "flex" ? "none" : "flex";
+        formClass == "profile-edit-form" ? form.style.display = "block" : "none"
+    });
+
+    closeButton.addEventListener("click", () => {
+        form.style.display = "none";
+    });
+}
+
+displayForm("form-add-plan", "btn-close-plan", "planform");
+displayForm("form-add-coach", "btn-close-coach", "coachform");
+displayForm("form-add-equipment", "btn-close-Inventory", "Inventoryform");
+displayForm("edit-profile-button", "cancel-edit", "profile-edit-form");
+
 

@@ -79,7 +79,6 @@ nav .nav-link:hover {
   }
   .sections {
     width: 100% !important;
-    border-radius: 30px !important;
     height: 100% !important;
     padding-bottom: 15%;
   }
@@ -101,7 +100,6 @@ footer .container-fluid div li {
   background-color: #1a1363;
   color: #ffffff;
   padding-top: 5%;
-  border-radius: 30px 0 0 30px;
   height: 817px;
 }
 .dashBoard .col-3 .nav ul {
@@ -140,7 +138,6 @@ footer .container-fluid div li {
   width: 100%;
   height: 819px;
   background-color: #ece9e9;
-  border-radius: 0 30px 30px 0;
 }
 .dashboardNav .dashboardlogo a {
   display: flex;
@@ -290,16 +287,25 @@ footer .container-fluid div li {
   transform: translateY(0);
 }
 
-.regeteration h3 {
+.regeteration h3 , 
+.payment h3 {
   font-family: "Poppins";
   color: #deba3b;
 }
-.regeteration h1 {
+.regeteration h1 ,
+.payment h1,
+.viewMembers h1,
+.report h1{
   color: #1a1363;
   font-family: "Poppins";
   margin-bottom: 30px;
 }
-.regeteration form,.plan form{
+.regeteration form,
+.plan form, 
+.payment form,
+.coaches form,
+.Inventory form,
+.report form{
   background-color: #ffffff;
   border-radius: 18px;
   width: 85%;
@@ -309,24 +315,49 @@ footer .container-fluid div li {
   4px 4px 4px rgba(77, 149, 83, 0.11);
 
 }
-.regeteration .regeterationform, .plan .planform{
+.regeteration .regeterationform, 
+.plan .planform, 
+.payment .paymentform,
+.coaches .coachform,
+.Inventory .Inventoryform,
+.report .reportform{
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1a1363;
   font-family: "Poppins";
 }
-.regeteration .regeterationform form .buttons, .plan .planform form .buttons{
+.regeteration .regeterationform form .buttons,
+.plan .planform form .buttons,
+.payment .paymentform form .buttons,
+.coaches .coachform form .buttons,
+.Inventory .Inventoryform form .buttons,
+.Admin-profile .profile-edit-form .buttons{
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.regeteration .regeterationform form .buttons #add-member , .plan .planform form .buttons #add-plan, #form-add-plan{
+.regeteration .regeterationform form .buttons #add-member , 
+.plan .planform form .buttons #add-plan,
+.payment .paymentform form .buttons #add-payment,
+#form-add-plan,
+#form-add-coach,
+#form-add-equipment,
+#add-admin,
+.modal-footer #save-new-admin,
+.coaches .coachform form .buttons #add-coach,
+.Inventory .Inventoryform form .buttons #add-Equipment,
+.Admin-profile .profile-edit-form .buttons #update-profile{
   margin-right: 2%;
   background-color: #1a1363;
   border-radius: 12px;
 }
-.regeteration .regeterationform form .buttons #cancel, .plan .planform form .buttons #cancel{
+.regeteration .regeterationform form .buttons #cancel, 
+.plan .planform form .buttons #cancel,
+.payment .paymentform form .buttons #cancel,
+.coaches .coachform form .buttons #cancel,
+.Inventory .Inventoryform form .buttons #cancel,
+.Admin-profile .profile-edit-form .buttons #cancel-edit{
   margin-right: 2%;
   background-color: #ffffff;
   color: #1a1363;
@@ -341,7 +372,25 @@ form input, form select {
   font-family: "Poppins";
   color: #1a1363;
 }
-.plan .planform{
+.plan .planform,
+.coaches .coachform{
   display: none;
 }
-
+#close-form-coach , #close-form-plan, #close-form-Inventory{
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+.Admin-profile .admin-info, .Admin-profile .profile-edit-form{
+      background-color: #ffffff;
+      border-radius: 18px;
+      margin-right: 3%;
+      padding: 5%;
+}
+.Admin-profile .profile-edit-form {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-right: 3%;
+  padding: 5%;
+  display: none;
+}

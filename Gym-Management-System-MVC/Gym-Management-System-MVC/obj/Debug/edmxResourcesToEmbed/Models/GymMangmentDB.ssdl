@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GymMangmentDB.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Coach">
+    <Key>
+      <PropertyRef Name="CoachID" />
+    </Key>
+    <Property Name="CoachID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Specialty" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PurchaseDate" Type="datetime" />
+    <Property Name="LastMaintenanceDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MemberHasMembership">
+    <Key>
+      <PropertyRef Name="MemberID" />
+      <PropertyRef Name="MembershipID" />
+    </Key>
+    <Property Name="MemberID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MembershipID" Type="int" Nullable="false" />
+    <Property Name="ExpiryDate" Type="datetime" Nullable="false" />
+    <Property Name="JoinDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Membership">
+    <Key>
+      <PropertyRef Name="MembershipID" />
+    </Key>
+    <Property Name="MembershipID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cost" Type="money" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MemberID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Receptionist">
+    <Key>
+      <PropertyRef Name="ReceptionistID" />
+    </Key>
+    <Property Name="ReceptionistID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Salt" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TrackEquipment">
+    <Key>
+      <PropertyRef Name="ReceptionistID" />
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="ReceptionistID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="EquipmentID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrainMember">
+    <Key>
+      <PropertyRef Name="CoachID" />
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="CoachID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MemberID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__MemberHas__Membe__66603565">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="MemberHasMembership" Type="Self.MemberHasMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="MemberHasMembership">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberHas__Membe__6754599E">
+    <End Role="Membership" Type="Self.Membership" Multiplicity="1" />
+    <End Role="MemberHasMembership" Type="Self.MemberHasMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Membership">
+        <PropertyRef Name="MembershipID" />
+      </Principal>
+      <Dependent Role="MemberHasMembership">
+        <PropertyRef Name="MembershipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payment__MemberI__5441852A">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TrackEqui__Equip__5DCAEF64">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="TrackEquipment" Type="Self.TrackEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="EquipmentID" />
+      </Principal>
+      <Dependent Role="TrackEquipment">
+        <PropertyRef Name="EquipmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TrackEqui__Recep__5CD6CB2B">
+    <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="1" />
+    <End Role="TrackEquipment" Type="Self.TrackEquipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Receptionist">
+        <PropertyRef Name="ReceptionistID" />
+      </Principal>
+      <Dependent Role="TrackEquipment">
+        <PropertyRef Name="ReceptionistID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TrainMemb__Coach__60A75C0F">
+    <End Role="Coach" Type="Self.Coach" Multiplicity="1" />
+    <End Role="TrainMember" Type="Self.TrainMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coach">
+        <PropertyRef Name="CoachID" />
+      </Principal>
+      <Dependent Role="TrainMember">
+        <PropertyRef Name="CoachID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TrainMemb__Membe__619B8048">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="TrainMember" Type="Self.TrainMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="TrainMember">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GymMangmentDBStoreContainer">
+    <EntitySet Name="Coach" EntityType="Self.Coach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Equipment" EntityType="Self.Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MemberHasMembership" EntityType="Self.MemberHasMembership" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Membership" EntityType="Self.Membership" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Receptionist" EntityType="Self.Receptionist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrackEquipment" EntityType="Self.TrackEquipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrainMember" EntityType="Self.TrainMember" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__MemberHas__Membe__66603565" Association="Self.FK__MemberHas__Membe__66603565">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="MemberHasMembership" EntitySet="MemberHasMembership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberHas__Membe__6754599E" Association="Self.FK__MemberHas__Membe__6754599E">
+      <End Role="Membership" EntitySet="Membership" />
+      <End Role="MemberHasMembership" EntitySet="MemberHasMembership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payment__MemberI__5441852A" Association="Self.FK__Payment__MemberI__5441852A">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="Payment" EntitySet="Payment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TrackEqui__Equip__5DCAEF64" Association="Self.FK__TrackEqui__Equip__5DCAEF64">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="TrackEquipment" EntitySet="TrackEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TrackEqui__Recep__5CD6CB2B" Association="Self.FK__TrackEqui__Recep__5CD6CB2B">
+      <End Role="Receptionist" EntitySet="Receptionist" />
+      <End Role="TrackEquipment" EntitySet="TrackEquipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TrainMemb__Coach__60A75C0F" Association="Self.FK__TrainMemb__Coach__60A75C0F">
+      <End Role="Coach" EntitySet="Coach" />
+      <End Role="TrainMember" EntitySet="TrainMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TrainMemb__Membe__619B8048" Association="Self.FK__TrainMemb__Membe__619B8048">
+      <End Role="Member" EntitySet="Member" />
+      <End Role="TrainMember" EntitySet="TrainMember" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
