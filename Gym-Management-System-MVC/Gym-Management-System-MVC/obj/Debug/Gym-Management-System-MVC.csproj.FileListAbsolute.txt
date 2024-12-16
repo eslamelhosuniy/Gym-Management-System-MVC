@@ -1,0 +1,3 @@
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.CoreCompileInputs.cache
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.AssemblyReference.cache
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.SuggestedBindingRedirects.cache

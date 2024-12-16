@@ -1,10 +1,10 @@
-﻿using GymManagementSystem.Models; // استيراد الموديل
+﻿using Gym_Management_System_MVC.Models;
 using System.Linq;
 using System.Web.Mvc;
 
 public class MembershipController : Controller
 {
-    private GymManagementDB db = new GymManagementDB();
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
 
     // عرض كل العضويات
     public ActionResult Index()

@@ -5,7 +5,7 @@ using System.Web.Mvc;
 
 public class ReceptionistController : Controller
 {
-    private GymManagementDB db = new GymManagementDB();
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
 
     // عرض كل موظفي الاستقبال
     public ActionResult Index()

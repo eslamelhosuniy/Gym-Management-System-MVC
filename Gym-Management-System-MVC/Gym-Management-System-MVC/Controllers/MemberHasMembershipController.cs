@@ -6,18 +6,18 @@ using System.Web.Mvc;
 
 public class MemberHasMembershipController : Controller
 {
-    private GymManagementDB db = new GymManagementDB();
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities ();
 
     public ActionResult Index()
     {
-        var memberHasMembership = db.MemberHasMembership.ToList();
+        var memberHasMembership = db.MemberHasMemberships.ToList();
         return View(memberHasMembership);
     }
 
     public ActionResult Create()
     {
         ViewBag.Members = db.Members.ToList();
-        ViewBag.Memberships = db.Membership.ToList();
+        ViewBag.Memberships = db.Memberships.ToList();
         return View();
     }
 
@@ -26,7 +26,7 @@ public class MemberHasMembershipController : Controller
     {
         if (ModelState.IsValid)
         {
-            db.MemberHasMembership.Add(memberHasMembership);
+            db.MemberHasMemberships.Add(memberHasMembership);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -35,10 +35,10 @@ public class MemberHasMembershipController : Controller
 
     public ActionResult Delete(Guid memberId, int membershipId)
     {
-        var relation = db.MemberHasMembership.Find(memberId, membershipId);
+        var relation = db.MemberHasMemberships.Find(memberId, membershipId);
         if (relation != null)
         {
-            db.MemberHasMembership.Remove(relation);
+            db.MemberHasMemberships.Remove(relation);
             db.SaveChanges();
         }
         return RedirectToAction("Index");

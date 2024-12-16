@@ -5,7 +5,7 @@ using System.Web.Mvc;
 
 public class CoachController : Controller
 {
-    private GymManagementDB db = new GymManagementDB(); // تعريف الـ DbContext للتعامل مع قاعدة البيانات
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities(); // تعريف الـ DbContext للتعامل مع قاعدة البيانات
 
     // عرض قائمة المدربين
     public ActionResult Index()

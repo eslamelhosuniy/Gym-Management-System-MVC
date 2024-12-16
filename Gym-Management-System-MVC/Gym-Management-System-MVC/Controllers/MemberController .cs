@@ -4,7 +4,7 @@ using Gym_Management_System_MVC.Models;
 
 public class MemberController : Controller
 {
-    private GymManagementDB db = new GymManagementDB();
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
 
     // أكشن لعرض الأعضاء
     public ActionResult Index()

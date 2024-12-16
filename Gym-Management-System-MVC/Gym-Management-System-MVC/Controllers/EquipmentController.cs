@@ -5,8 +5,8 @@ using System.Web.Mvc;
 
 public class EquipmentController : Controller
 {
-    private GymManagementDB db = new GymManagementDB();
-
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
+   
     // عرض كل الأجهزة الرياضية
     public ActionResult Index()
     {
