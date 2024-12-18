@@ -1,0 +1,439 @@
+﻿++Solution 'Gym-Management-System-MVC' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:Gym-Management-System-MVC.sln
+++Gym-Management-System-MVC
+i:{00000000-0000-0000-0000-000000000000}:Gym-Management-System-MVC
+++Properties
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\properties\
+++AssemblyInfo.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\properties\assemblyinfo.cs
+++References
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Antlr3.Runtime
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++EntityFramework
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++EntityFramework.SqlServer
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Bcl.AsyncInterfaces
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Bcl.HashCode
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.CSharp
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Data.SqlClient
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.EntityFrameworkCore
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.EntityFrameworkCore.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.EntityFrameworkCore.Design
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.EntityFrameworkCore.Relational
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.EntityFrameworkCore.SqlServer
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Caching.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Caching.Memory
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Configuration
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Configuration.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Configuration.Binder
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.DependencyInjection
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.DependencyInjection.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Logging
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Logging.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Options
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Extensions.Primitives
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Identity.Client
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.IdentityModel.JsonWebTokens
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.IdentityModel.Logging
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.IdentityModel.Protocols
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.IdentityModel.Protocols.OpenIdConnect
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.IdentityModel.Tokens
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Microsoft.Web.Infrastructure
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++Newtonsoft.Json
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Buffers
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Collections.Immutable
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.ComponentModel.Annotations
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.ComponentModel.DataAnnotations
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Configuration
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Core
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Data
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Data.Common
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Data.DataSetExtensions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Diagnostics.DiagnosticSource
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Drawing
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.EnterpriseServices
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.IdentityModel
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.IdentityModel.Tokens.Jwt
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Memory
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Net.Http
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Net.Http.WebRequest
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Numerics
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Numerics.Vectors
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Runtime.CompilerServices.Unsafe
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Runtime.Serialization
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Security
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Threading.Tasks.Extensions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Abstractions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.ApplicationServices
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.DynamicData
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Entity
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Extensions
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Helpers
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Mvc
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Optimization
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Razor
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Routing
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.Services
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.WebPages
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.WebPages.Deployment
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Web.WebPages.Razor
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Windows.Forms
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Xml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++System.Xml.Linq
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++WebGrease
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:
+++App_Data
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\app_data\
+++App_Start
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\app_start\
+++BundleConfig.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\app_start\routeconfig.cs
+++Content
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\
+++bootstrap-grid.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.css
+++bootstrap-grid.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.min.css
+++bootstrap-grid.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.rtl.css
+++bootstrap-grid.rtl.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.rtl.min.css
+++bootstrap-grid.rtl.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.css
+++bootstrap-reboot.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.min.css
+++bootstrap-reboot.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.rtl.css
+++bootstrap-reboot.rtl.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.rtl.min.css
+++bootstrap-reboot.rtl.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.css
+++bootstrap-utilities.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.min.css
+++bootstrap-utilities.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.rtl.css
+++bootstrap-utilities.rtl.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.rtl.min.css
+++bootstrap-utilities.rtl.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap-utilities.rtl.min.css.map
+++bootstrap.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.css
+++bootstrap.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.css.map
+++bootstrap.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.min.css
+++bootstrap.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.min.css.map
+++bootstrap.rtl.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.rtl.css
+++bootstrap.rtl.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.rtl.min.css
+++bootstrap.rtl.min.css.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\bootstrap.rtl.min.css.map
+++lbstyle.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\lbstyle.css
+++login.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\login.css
+++Site.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\site.css
+++style.css
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\content\style.css
+++Controllers
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\
+++Coachcontroller.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\coachcontroller.cs
+++EquipmentController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\equipmentcontroller.cs
+++HomeController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\homecontroller.cs
+++MemberController .cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\membercontroller .cs
+++MemberHasMembershipController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\memberhasmembershipcontroller.cs
+++MembershipController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\membershipcontroller.cs
+++paymentController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\paymentcontroller.cs
+++ReceptionistController.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\controllers\receptionistcontroller.cs
+++images
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\
+++1background.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\1background.png
+++318178129_692552719025233_5901779982373819260_n 2 (1).png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\318178129_692552719025233_5901779982373819260_n 2 (1).png
+++coach1.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\coach1.png
+++coach2.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\coach2.png
+++coach3.jpg
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\coach3.jpg
+++down.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\down.png
+++Main Logo.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\main logo.png
+++maniamge.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\maniamge.png
+++mdi_chess-pawn.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\mdi_chess-pawn.png
+++OfferIcon1.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\offericon1.png
+++OfferIcon2.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\offericon2.png
+++OfferIcon3.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\offericon3.png
+++PersonCircle (1).png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\personcircle (1).png
+++PersonCircle.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\personcircle.png
+++Rectangle 52.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\rectangle 52.png
+++Rectangle 66.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\rectangle 66.png
+++Rectangle 71.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\rectangle 71.png
+++Rectangle 79 (1).png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\rectangle 79 (1).png
+++Rectangle 84.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\rectangle 84.png
+++Vector (1).png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\vector (1).png
+++Vector 2.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\vector 2.png
+++Vector 3.png
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\images\vector 3.png
+++Models
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\
+++Scripts
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\
+++bootstrap.bundle.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.bundle.js
+++bootstrap.bundle.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.bundle.min.js
+++bootstrap.bundle.min.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.bundle.min.js.map
+++bootstrap.esm.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.esm.js
+++bootstrap.esm.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.esm.min.js
+++bootstrap.esm.min.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.esm.min.js.map
+++bootstrap.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.js
+++bootstrap.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.js.map
+++bootstrap.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.min.js
+++bootstrap.min.js.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\bootstrap.min.js.map
+++jquery-3.4.1.intellisense.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery-3.4.1.slim.min.map
+++jquery.validate-vsdoc.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery.validate-vsdoc.js
+++jquery.validate.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery.validate.js
+++jquery.validate.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery.validate.min.js
+++jquery.validate.unobtrusive.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\jquery.validate.unobtrusive.min.js
+++modernizr-2.8.3.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\modernizr-2.8.3.js
+++script.js
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\scripts\script.js
+++Views
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\
+++Home
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\home\
+++DashBoard.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\home\dashboard.cshtml
+++landingPage.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\home\landingpage.cshtml
+++login.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\home\login.cshtml
+++nav.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\home\nav.cshtml
+++Shared
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\shared\
+++_Layout.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\shared\_layout.cshtml
+++Error.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\shared\error.cshtml
+++_ViewStart.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\_viewstart.cshtml
+++Web.config
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\web.config
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\web.config
+++favicon.ico
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\favicon.ico
+++Global.asax
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\global.asax
+++packages.config
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\packages.config
+++Web.Debug.config
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\web.debug.config
+++Web.Release.config
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\web.release.config
+++GymMangmentDB.edmx
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.edmx
+++Global.asax.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\global.asax.cs
+++GymMangmentDB.Context.tt
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.context.tt
+++GymMangmentDB.Designer.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.designer.cs
+++GymMangmentDB.edmx.diagram
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.edmx.diagram
+++GymMangmentDB.tt
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.tt
+++GymMangmentDB.Context.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.context.cs
+++Coach.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\coach.cs
+++Equipment.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\equipment.cs
+++GymMangmentDB.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\gymmangmentdb.cs
+++Member.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\member.cs
+++MemberHasMembership.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\memberhasmembership.cs
+++Membership.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\membership.cs
+++Payment.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\payment.cs
+++Receptionist.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\receptionist.cs
+++sysdiagram.cs
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\models\sysdiagram.cs
+++dashHome.cshtml
+++ContentPage1.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\contentpage1.cshtml
+++Member.cshtml
+++Member
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\member\
+++Create.cshtml
+i:{f8c20709-f7b9-4360-853e-41e116d232e2}:d:\college\sw develpment\gym-management-system-mvc\gym-management-system-mvc\gym-management-system-mvc\views\member\create.cshtml
+++Gym-Management-System-MVC (unloaded)
+++Solution 'Gym-Management-System-MVC' ‎(0 of 1 project)

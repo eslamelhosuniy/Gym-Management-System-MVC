@@ -1,0 +1,31 @@
+﻿@model Gym_Management_System_MVC.Models.Member
+
+<div class="text">
+    <h3>Become a Member!</h3>
+    <h1>Register</h1>
+</div>
+<div class="regeterationform">
+    @using (Html.BeginForm("Create", "Member", FormMethod.Post, new { @class = "row g-3" }))
+    {
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Name, "Name of Participant", new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", id = "member-name" })
+        </div>
+        <div class="col-6">
+            @Html.LabelFor(m => m.Email, "Email Address", new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", id = "email-address", type = "email" })
+        </div>
+        <div class="col-6">
+            @Html.LabelFor(m => m.Coaches, "Contact No.", new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Coaches, new { @class = "form-control", id = "contact-no" })
+        </div>
+        <div class="col-6">
+            @Html.LabelFor(m => m.Address, "Address", new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control", id = "Address" })
+        </div>
+        <div class="col-12 buttons">
+            <button type="submit" id="add-member" class="btn btn-primary">Add Membership</button>
+            <button type="button" id="cancel" class="btn btn-primary">Cancel</button>
+        </div>
+    }
+</div>

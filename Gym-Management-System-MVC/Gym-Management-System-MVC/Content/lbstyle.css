@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    height: 100px;
+    background-color: #FFFFFF;
+   
+}
+nav .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1363;
+    font-family: 'Monument Extended';
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+nav .navbar-brand img{
+    width: 78px;
+    height: 111px;
+}
+
+nav .navbar-nav button{
+    color: #1A1363;
+    background-color: #FDEE21;
+    font-weight: bold;
+    width: 108px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease;
+}
+nav .navbar-nav li{
+    margin: 0 10px;
+    border-radius: 50px;
+    color: #1A1363;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav .navbar-nav li:hover, nav .navbar-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: aliceblue !important;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+nav .nav-link:hover{
+        color: aliceblue;
+}
+@media only screen and (max-width: 990px) {
+    .collapse {
+            margin-top: -30px;
+        }
+    nav .navbar-nav li {
+        margin: 3px 0;
+    }
+    .navbar , .collapse{
+        background-color: rgb(255, 255, 255);
+    }
+    
+           nav .navbar-nav li:hover,
+            nav .navbar-nav button:hover {
+                background-color: rgba(0, 0, 0, 0.808);
+                color: aliceblue !important;
+                padding: 0 5px;
+                text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+            }
+        
+            nav .nav-link:hover {
+                color: aliceblue;
+            }
+}
+
+
+footer .container-fluid{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left: 100px;
+    
+}
+footer .container-fluid div{
+    margin: 0 10px;
+}
+footer .container-fluid div li{
+    margin:  -10px 0;
+}
+
+.fsection
+{
+    z-index: -1;
+    position: relative;
+    font-style:inherit;
+    font-size: xx-large;
+    font-weight: 800px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-repeat: no-repeat;  
+    background-image: url('./images/1background.png');
+   background-size: cover;
+   justify-content: center;
+   overflow: hidden;
+   
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 36, 36);
+    background: linear-gradient(180deg, rgba(0, 36, 36, 0) 0%, rgba(26, 19, 83, 1) 100%);
+    z-index:-1 ;
+    pointer-events: none;
+}
+.fsection h1
+{
+    font-size: 60px;
+    font-weight: bolder;
+}
+#fsectionimage
+{
+    position: relative;
+   
+}
+.Ssection
+{
+    
+    font-style:inherit;
+    font-size: xx-large;
+    font-weight: 800px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #1A1363;
+    background-repeat: no-repeat; 
+    background-blend-mode:darken ;
+    height: 580px;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+#manimage
+{
+    
+    position: relative;
+    bottom: 440px;
+    right: 12px;
+}
+.content2section p 
+{
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: 451px;
+    font-size: large;
+    font: bolder;
+    color: #fdf58f;
+}
+.Ssection h1 :first-child
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.content2section h1
+{
+    margin-left: 6rem;
+   
+}
+.Thsection
+{
+    background-color: whitesmoke;
+    
+    background-image:url(./images/Vector\ 2.png)  ;
+    background-repeat: no-repeat; 
+    height: 450px;
+    font-family: 'Poppins', sans-serif;
+    font-style:inherit;
+    font-size: xx-large;
+    font-weight: 800px;
+    
+}
+.Thsection h1:first-child
+{
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.outerbox1
+{
+    border: solid 3px  #1A1363;
+    height: 180px;
+    border-radius: 15px;
+    background-color: white;
+  padding: 0px;
+  position: relative;
+  left:30px ;
+}
+.inerbox1{
+    border: #1A1363 solid 3px;
+    height: 163px;
+    width: 130px;
+    border-radius: 15px;
+    position: relative;
+    right: 4px;
+    top: 6px;
+    text-align: center;
+
+}
+.inerbox5{
+    border: #1A1363 solid 3px;
+    height: 163px;
+    width: 130px;
+    border-radius: 15px;
+   
+    
+   
+}
+.outerbox3
+{
+    background-color: #6e65ce;
+    border: solid 5px  #ffffffd1;
+    height: 180px;
+    
+    border-radius: 15px;
+    
+    padding: 3px;
+    position: relative;
+    right: 30px; ;
+}
+.outerbox2
+{
+    background-color: #2f2d3b;
+    border: solid 5px  #ffffffd1;
+    height: 180px;
+   
+    border-radius: 15px;
+    position: relative;
+    top: 20px;
+  padding: 3px;
+}
+.outerbox5
+{
+    background-color: #1A1363;
+    border: solid 5px  #ffffffd1;
+    height: 180px;
+   
+    border-radius: 15px;
+    position: relative;
+    right: 40px ;
+  padding: 3px;
+}
+.outerbox4
+{
+    background-color: #433c89;
+    border: solid 5px  #ffffffd1;
+    height: 180px;
+    
+    border-radius: 15px;
+    position: relative;
+    right:60px ;
+    padding: 3px;
+    top: 20px;
+}
+
+.section4
+{
+background-image: url(./images/Rectangle\ 84.png);
+background-size: cover  ; 
+height: 430px;
+font-family: 'Poppins', sans-serif;
+font-style:inherit;
+font-size: xx-large;
+font-weight: 800px;
+text-align: center;
+padding: 20PX;
+
+}
+.coachcard
+{
+    width: 240px;
+    height: 270px;
+    background-color: #b6a9ff;
+    border-radius: 30px;
+}
+.coachimage
+{
+    
+        background-color: white;
+        height: 130px;
+        width: 130px;border-radius: 50%;
+        position: relative;
+        left: 53px;
+        bottom:60px;
+        border: solid 5px #b6a9ff;
+    
+}
+#coach1
+{
+    background-image: url(./images/coach1.png);
+    background-size: cover;
+    background-position: center;
+  vertical-align:middle;
+}
+#coach2
+{
+    background-image: url(./images/coach2.png);
+    background-size: cover;
+    background-position: center;
+    vertical-align:middle;
+}
+#coach3
+{
+    background-image: url(./images/coach3.jpg);
+    background-size: cover;
+    background-position: center;
+    vertical-align:middle;
+    
+}
+
+.section5
+{
+    background-image: url(./images/Rectangle\ 52.png);
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:color-burn;
+   background-color: #6e6d70;
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+
+    
+}
+#registerform
+{
+    width: 450px;
+    height: 300px;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    padding-top:20px;  
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.registerlables
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.registerinput
+{
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 0px black;
+    background-color: #b6a9ff;
+}
+.registersubmit
+{
+    border: solid  rgb(255, 217, 0) 1px ;
+    margin-left: 20px;
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: rgb(213, 186, 37);
+  color: rgb(71, 29, 134);
+}
+.clear-btn
+{
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid  rgb(255, 255, 255) 1px ;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000c2;
+}
+.registersubmit:hover
+{
+    background-color:rgb(90, 90, 90);
+    color: white;
+    border: rgb(90, 90, 90);
+}
+.clear-btn:hover
+{
+    background-color:rgb(90, 90, 90);
+    color: white;
+    border: rgb(90, 90, 90);
+}
+
