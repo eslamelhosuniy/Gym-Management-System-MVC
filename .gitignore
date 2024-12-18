@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Gym-Management-System-MVC/Gym-Management-System-MVC/Views/Payment/reports.cshtml
