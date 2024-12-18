@@ -1,7 +1,50 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
+﻿<div id="Inventory" class="section container Inventory">
+    <div class="text mb-5">
+        <button type="button"
+                id="form-add-equipment"
+                class="btn btn-primary">
+            Add Equipment
+        </button>
+    </div>
+    <div class="Inventoryform">
+        <form class="row g-3">
+            <div id="close-form-Inventory">
+                <button type="button"
+                        id="btn-close-Inventory"
+                        class="btn-close"
+                        aria-label="Close"></button>
+            </div>
+            <div class="col-md-6">
+                <label for="Equipment-name" class="form-label">Equipment Name</label>
+                <input type="text" class="form-control" id="Equipment-name" />
+            </div>
+            <div class="col-md-6">
+                <label for="LastMaintanceDate" class="form-label">LastMaintanceDate</label>
+                <input type="date"
+                       class="form-control"
+                       id="LastMaintanceDate" />
+            </div>
+            <div class="col-md-6">
+                <label for="Status" class="form-label">Status</label>
+                <input type="text" class="form-control" id="Status" />
+            </div>
+            <div class="col-md-6">
+                <label for="PruchaseDate" class="form-label">PruchaseDate</label>
+                <input type="date" class="form-control" id="PruchaseDate" />
+            </div>
+            <div class="col-12 buttons">
+                <button type="submit"
+                        id="add-Equipment"
+                        class="btn btn-primary">
+                    Add Equipment
+                </button>
+                <button type="button" id="cancel" class="btn btn-primary">
+                    cancel
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="equuipment-table">
+        <!--equuipment table-->
+    </div>
+</div>

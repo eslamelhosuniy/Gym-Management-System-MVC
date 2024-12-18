@@ -5,7 +5,7 @@ function loginPage() {
 
 
 //chartes
-    const ctx = document.getElementById('salesChart').getContext('2d');
+const ctx = document.getElementById('salesChart').getContext('2d');
 
         const data = {
             datasets: [{

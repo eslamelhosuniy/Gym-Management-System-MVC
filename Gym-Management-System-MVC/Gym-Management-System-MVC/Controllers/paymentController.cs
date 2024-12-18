@@ -10,10 +10,13 @@ public class PaymentController : Controller
     // عرض كل المدفوعات
     public ActionResult Index()
     {
+        return View();
+    }
+    public ActionResult reports()
+    {
         var payments = db.Payments.ToList();
         return View(payments);
     }
-
     // عرض تفاصيل الدفع
     public ActionResult Details(Guid id)
     {

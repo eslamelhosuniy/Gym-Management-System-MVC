@@ -1,7 +1,142 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿<div id="dashHome" class="section container dashHome active">
+    <div class="row">
+        <div class="col-12 col-lg-7 me-4">
+            <div class="hello">
+                <div class="text">
+                    <h6>Welcome Banner, <span>Martell</span></h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="statics mt-4">
+                <div class="row">
+                    <div class="col coaches">
+                        <h4>Coaches</h4>
+                        <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>
+                        <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>
+                        <h6><i class="fa-solid fa-circle me-2"></i>Hazem</h6>
+                    </div>
+                    <div id="sales" class="col sales pb-2">
+                        <h4>Sales</h4>
+                        <canvas id="salesChart"></canvas>
+                        <h5 class="percent">84%</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="active-members">
+                <!--Table members-->
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 h-100">
+            <div id="calendar" class="calender">
+                <div id="monthYear"></div>
+                <div id="daysContainer">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+            </div>
+            <div class="inventroy">
+                <h4>inventroy</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Admin-profile"
+     class="section container Admin-profile ">
+    <div class="add-new-admin mb-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="mdo" id="add-admin">
+            Add New Admin
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-5 admin-info text-center">
+            <img src="~/images/PersonCircle (1).png" />
+            <div class="editprofile d-flex justify-content-center align-items-center">
+                <button type="button" id="edit-profile-button" class="btn">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    Update Profile
+                </button>
+            </div>
 
-<h2>Index</h2>
+            <div class="mb-3 d-flex justify-content-between">
+                <label class="form-label">User Name: </label>
+                <p>Hazem</p>
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+                <label class="form-label">Contact No.: </label>
+                <p>012011010015</p>
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+                <label class="form-label">Email Address: </label>
+                <p>jdjdjdjjdjdj@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-5 profile-edit-form">
+            <div class="mb-3">
+                <label for="user-name" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="user-name">
+            </div>
+            <div class="mb-3">
+                <label for="contact-Number" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contact-Number">
+            </div>
+            <div class="mb-3">
+                <label for="Email-Address" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="Email-Address">
+            </div>
+            <div class="col-12 buttons">
+                <button type="submit" id="update-profile" class="btn btn-primary">
+                    Update
+                </button>
+                <button type="button" id="cancel-edit" class="btn btn-primary">
+                    cancel
+                </button>
+            </div>
+        </div>
 
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Admin</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="newadmin-name" class="col-form-label">Name</label>
+                        <input type="text" class="form-control" id="newadmin-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newadmin-phone" class="col-form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="newadmin-phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newadmin-email" class="col-form-label">Email Address</label>
+                        <input type="email" class="form-control" id="newadmin-email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newadmin-pass" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" id="newadmin-pass">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="save-new-admin" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

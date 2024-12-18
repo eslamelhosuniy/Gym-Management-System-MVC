@@ -1,7 +1,40 @@
-﻿
-@{
-    ViewBag.Title = "plans";
-}
-
-<h2>plans</h2>
-
+﻿<div id="plan" class="section container plan">
+    <div class="text mb-5">
+        <button type="button" id="form-add-plan" class="btn btn-primary">
+            Add plan
+        </button>
+    </div>
+    <div class="planform">
+        <form class="row g-3">
+            <div id="close-form-plan">
+                <button type="button"
+                        id="btn-close-plan"
+                        class="btn-close"
+                        aria-label="Close"></button>
+            </div>
+            <div class="col-md-6">
+                <label for="plan-name" class="form-label">Plan Name</label>
+                <input type="text" class="form-control" id="plan-name" />
+            </div>
+            <div class="col-md-6">
+                <label for="Validity" class="form-label">Validity</label>
+                <input type="text" class="form-control" id="Validity" />
+            </div>
+            <div class="col-md-6">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="email" class="form-control" id="amount" />
+            </div>
+            <div class="col-12 buttons">
+                <button type="submit" id="add-plan" class="btn btn-primary">
+                    Add plan
+                </button>
+                <button type="button" id="cancel" class="btn btn-primary">
+                    cancel
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="plan-table">
+        <!--plan Table-->
+    </div>
+</div>

@@ -12,7 +12,11 @@ public class MemberController : Controller
         var members = db.Members.ToList();
         return View(members);
     }
-
+    public ActionResult Regestration()
+    {
+       
+        return View();
+    }
     // أكشن لإضافة عضو جديد
     public ActionResult Create()
     {

@@ -412,11 +412,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Member\Create.cshtml" />
     <Content Include="Views\Member\Index.cshtml" />
     <Content Include="Views\Membership\plans.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
     <Content Include="Views\Receptionist\Index.cshtml" />
+    <Content Include="Views\Member\Regestration.cshtml" />
+    <Content Include="Views\Payment\reports.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
