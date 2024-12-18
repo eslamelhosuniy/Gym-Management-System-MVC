@@ -1,5 +1,3 @@
-C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.CoreCompileInputs.cache
-C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.SuggestedBindingRedirects.cache
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.dll.config
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.dll
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.pdb
@@ -162,8 +160,6 @@ D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.dll
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.pdb
 D:\COLLEGE\SW Develpment\Gym-Management-System-MVC\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.AssemblyReference.cache
-C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.dll
-C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.pdb
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.dll.config
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.dll
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\Gym-Management-System-MVC.pdb
@@ -320,5 +316,8 @@ C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\pt-BR\
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\ru\Microsoft.Data.SqlClient.resources.dll
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.SuggestedBindingRedirects.cache
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.CoreCompileInputs.cache
 C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.CopyComplete
-C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.csproj.AssemblyReference.cache
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.dll
+C:\الكلية\b\Gym-Management-System-MVC\Gym-Management-System-MVC\obj\Debug\Gym-Management-System-MVC.pdb
