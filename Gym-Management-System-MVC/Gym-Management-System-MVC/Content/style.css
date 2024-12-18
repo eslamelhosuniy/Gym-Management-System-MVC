@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+nav {
+  height: 100px;
+  background-color: #ffffff;
+}
+nav .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1363;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav .navbar-brand img,
+.dashboardNav img {
+  width: 78px;
+  height: 111px;
+}
+
+nav .navbar-nav button {
+  color: #1a1363;
+  background-color: #fdee21;
+  font-weight: bold;
+  width: 108px;
+  height: 44px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+}
+nav .navbar-nav li {
+  margin: 0 10px;
+  border-radius: 50px;
+  color: #1a1363;
+  font-family: "Poppins";
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+nav .navbar-nav li:hover,
+nav .navbar-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: aliceblue !important;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+nav .nav-link:hover {
+  color: aliceblue;
+}
+@media only screen and (max-width: 992px) {
+  .collapse {
+    margin-top: -30px;
+  }
+  nav .navbar-nav li {
+    margin: 3px 0;
+  }
+  .navbar,
+  .collapse {
+    background-color: rgb(255, 255, 255);
+  }
+
+  nav .navbar-nav li:hover,
+  nav .navbar-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: aliceblue !important;
+    padding: 0 5px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  nav .nav-link:hover {
+    color: aliceblue;
+  }
+  .dashboard-links {
+    display: none;
+  }
+  .sections {
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 15%;
+  }
+}
+
+footer .container-fluid {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+footer .container-fluid div {
+  margin: 0 100px;
+}
+footer .container-fluid div li {
+  margin: -10px 0;
+}
+
+.dashBoard .dashboard-links {
+  background-color: #1a1363;
+  color: #ffffff;
+  padding-top: 5%;
+  height: 817px;
+}
+.dashBoard .col-3 .nav ul {
+  list-style: none;
+  padding-bottom: 30%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding-left: 20px;
+  font-weight: 500;
+}
+.dashBoard .col-3 .nav ul li,
+.logout {
+  display: flex;
+  width: 107%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 0 !important;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.dashboard-links span {
+  margin-left: 20px;
+}
+.dashBoard .col-3 .nav ul li:hover,.dashBoard .col-3 .nav ul li.active {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 30px 0 0 30px;
+  cursor: pointer;
+}
+
+.sections {
+  width: 100%;
+  height: 819px;
+  background-color: #ece9e9;
+}
+.dashboardNav .dashboardlogo a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.dashboardNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashBoard .notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashBoard .notification li {
+  list-style: none;
+  margin-right: 10px;
+}
+.dashBoard .notification a {
+  text-decoration: none;
+  color: #1a1363;
+}
+.sections .dashHome .col-lg-7 .hello {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  height: 40%;
+  width: 102%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    4px 4px 4px rgba(77, 149, 83, 0.11);
+  padding: 10%;
+}
+.sections .dashHome .col-lg-7 .hello p {
+  max-width: 100%;
+}
+
+
+.sections .dashHome .col-lg-7 .hello span {
+  font-weight: bold;
+  color: #1a1363;
+}
+.sections .dashHome .col-lg-7 .statics .coaches {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    4px 4px 4px rgba(77, 149, 83, 0.11);
+  padding: 5%;
+  margin-left: 2%;
+}
+.sections .dashHome .col-lg-7 .statics .coaches h6 {
+  color: #1a1363;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.sections .dashHome .col-lg-7 .statics .sales {
+  position: relative;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    4px 4px 4px rgba(77, 149, 83, 0.11);
+  padding: 5% 5% 1% 5%;
+  margin-left: 3%;
+}
+.sales canvas {
+  height: 100px !important;
+  width: 100px !important;
+  margin-left: 20%;
+}
+.percent {
+  position: absolute;
+  width: 46px;
+  height: 30px;
+  left: 37%;
+  top: 62%;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 20px;
+
+  color: #2b2b2b;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        4px 4px 4px rgba(77, 149, 83, 0.11);
+}
+
+#monthYear {
+  background: #1a1363;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#daysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+#daysContainer div {
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#daysContainer div:nth-child(-n + 7) {
+  background: #ddd;
+  font-weight: bold;
+}
+.inventroy {
+  background: #ffffff;
+  height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+  4px 4px 4px rgba(77, 149, 83, 0.11);
+  padding: 5% 5% 1% 5%;
+  margin-top: 4%;
+}
+.section {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.regeteration h3 , 
+.payment h3 {
+  font-family: "Poppins";
+  color: #deba3b;
+}
+.regeteration h1 ,
+.payment h1,
+.viewMembers h1,
+.report h1{
+  color: #1a1363;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
+.regeteration form,
+.plan form, 
+.payment form,
+.coaches form,
+.Inventory form,
+.report form{
+  background-color: #ffffff;
+  border-radius: 18px;
+  width: 85%;
+  display: flex;
+  padding: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+  4px 4px 4px rgba(77, 149, 83, 0.11);
+
+}
+.regeteration .regeterationform, 
+.plan .planform, 
+.payment .paymentform,
+.coaches .coachform,
+.Inventory .Inventoryform,
+.report .reportform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1363;
+  font-family: "Poppins";
+}
+.regeteration .regeterationform form .buttons,
+.plan .planform form .buttons,
+.payment .paymentform form .buttons,
+.coaches .coachform form .buttons,
+.Inventory .Inventoryform form .buttons,
+.Admin-profile .profile-edit-form .buttons{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.regeteration .regeterationform form .buttons #add-member , 
+.plan .planform form .buttons #add-plan,
+.payment .paymentform form .buttons #add-payment,
+#form-add-plan,
+#form-add-coach,
+#form-add-equipment,
+#add-admin,
+.modal-footer #save-new-admin,
+.coaches .coachform form .buttons #add-coach,
+.Inventory .Inventoryform form .buttons #add-Equipment,
+.Admin-profile .profile-edit-form .buttons #update-profile{
+  margin-right: 2%;
+  background-color: #1a1363;
+  border-radius: 12px;
+}
+.regeteration .regeterationform form .buttons #cancel, 
+.plan .planform form .buttons #cancel,
+.payment .paymentform form .buttons #cancel,
+.coaches .coachform form .buttons #cancel,
+.Inventory .Inventoryform form .buttons #cancel,
+.Admin-profile .profile-edit-form .buttons #cancel-edit{
+  margin-right: 2%;
+  background-color: #ffffff;
+  color: #1a1363;
+  border: #1a1363 solid 1px;
+  border-radius: 12px;
+}
+form input, form select {
+  border: 2px #1a1363 solid !important;
+}
+
+.plan h3 {
+  font-family: "Poppins";
+  color: #1a1363;
+}
+.plan .planform,
+.coaches .coachform{
+  display: none;
+}
+#close-form-coach , #close-form-plan, #close-form-Inventory{
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+.Admin-profile .admin-info, .Admin-profile .profile-edit-form{
+      background-color: #ffffff;
+      border-radius: 18px;
+      margin-right: 3%;
+      padding: 5%;
+}
+.Admin-profile .profile-edit-form {
+  background-color: #ffffff;
+  border-radius: 18px;
+  margin-right: 3%;
+  padding: 5%;
+  display: none;
+}
