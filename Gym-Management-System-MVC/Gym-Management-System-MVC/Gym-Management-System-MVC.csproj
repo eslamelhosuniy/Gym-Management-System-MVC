@@ -391,6 +391,8 @@
     <Content Include="images\Vector 2.png" />
     <Content Include="images\Vector 3.png" />
     <Content Include="Views\ContentPage1.cshtml" />
+    <Content Include="Views\Coach\Index.cshtml" />
+    <Content Include="Views\Equipment\Index.cshtml" />
     <None Include="Views\Home\DashBoard.cshtml" />
     <None Include="Views\Home\landingPage.cshtml" />
     <Content Include="Content\lbstyle.css" />
@@ -411,6 +413,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Member\Create.cshtml" />
+    <Content Include="Views\Member\Index.cshtml" />
+    <Content Include="Views\Membership\plans.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
+    <Content Include="Views\Receptionist\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

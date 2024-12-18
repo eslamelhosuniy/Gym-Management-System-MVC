@@ -13,67 +13,8 @@
           rel="stylesheet" />
 </head>
 <body>
-    <div class="container-fluid h-100 dashBoard">
-        <!--top navbar-->
-        <div class="row">
-            <div class="col-3 dashboard-links">
-                <div class="text-center data">
-                  
-                    <img src="~/images/PersonCircle.png" />
-                    <h3>Administrator Name</h3>
-                    <h6>juan.delacruz@gmail.com</h6>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li target="dashHome" class="sideButton active">
-                            <i class="fa-solid fa-table"></i><span>Dashboard</span>
-                        </li>
-                        <li target="Admin-profile" class="sideButton">
-                            <i class="fa-solid fa-house"></i><span>Admin Profile</span>
-                        </li>
-                        <li target="regeteration" class="sideButton">
-                            <i class="fa-regular fa-pen-to-square"></i><span>Registration</span>
-                        </li>
-                        <li target="plan" class="sideButton">
-                            <i class="fa-solid fa-list-check"></i><span>Plan</span>
-                        </li>
-                        <li target="payment" class="sideButton">
-                            <i class="fa-solid fa-credit-card"></i><span>Payment</span>
-                        </li>
-                        <li target="Inventory" class="sideButton">
-                            <i class="fa-solid fa-warehouse"></i><span>Inventory</span>
-                        </li>
-                        <li target="viewMembers" class="sideButton">
-                            <i class="fa-solid fa-users"></i><span>View Members</span>
-                        </li>
-                        <li target="coaches" class="sideButton">
-                            <i class="fa-solid fa-dumbbell"></i><span>Coaches</span>
-                        </li>
-                        <li target="report" class="sideButton">
-                            <i class="fa-solid fa-book-open"></i><span>Report</span>
-                        </li>
-                        <li style="margin-top: 30%" class="logout">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log out</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 col-lg-9 sections">
-                <div class="dashboardNav">
-                    <div class="dashboardlogo">
-                        <a class="navbar-brand" href="#">
-                            <img src="~/images/Main Logo.png" />
-                            <h6>
-                                STAMINA <br />
-                                FITNESS
-                            </h6>
-                        </a>
-                    </div>
-                    <div class="notification me-4">
-                        <li><a href="#">feedback</a></li>
-                        <i class="fa-solid fa-bell"></i>
-                    </div>
-                </div>
+  
+        
                 <div id="dashHome" class="section container dashHome active">
                     <div class="row">
                         <div class="col-12 col-lg-7 me-4">
@@ -245,50 +186,7 @@
                         </form>
                     </div>
                 </div>
-                <div id="coaches" class="section container coaches">
-                    <div class="text mb-5">
-                        <button type="button" id="form-add-coach" class="btn btn-primary">
-                            Add Coach
-                        </button>
-                    </div>
-                    <div class="coachform">
-                        <form class="row g-3">
-                            <div id="close-form-coach">
-                                <button type="button"
-                                        id="btn-close-coach"
-                                        class="btn-close"
-                                        aria-label="Close"></button>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="coach-name" class="form-label">Coach Name</label>
-                                <input type="text" class="form-control" id="coach-name" />
-                            </div>
-                            <div class="col-md-6">
-                                <label for="coach-Email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="coach-Email" />
-                            </div>
-                            <div class="col-md-6">
-                                <label for="coach-phone" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" id="coach-phone" />
-                            </div>
-                            <div class="col-md-6">
-                                <label for="Specialty" class="form-label">Specialty</label>
-                                <input type="text" class="form-control" id="Specialty" />
-                            </div>
-                            <div class="col-12 buttons">
-                                <button type="submit" id="add-coach" class="btn btn-primary">
-                                    Add Coach
-                                </button>
-                                <button type="button" id="cancel" class="btn btn-primary">
-                                    cancel
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="coach-table">
-                        <!--Coach table-->
-                    </div>
-                </div>
+              
                 <div id="Inventory" class="section container Inventory">
                     <div class="text mb-5">
                         <button type="button"
@@ -427,9 +325,7 @@
 
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
