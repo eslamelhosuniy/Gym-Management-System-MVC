@@ -19,7 +19,82 @@
   <body>
     <div class="container-fluid h-100 dashBoard">
       <!--top navbar-->
+      <div class="Topnavpar d-block d-md-none">
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <div class="dashboardlogo">
+              <a class="navbar-brand" href="#"
+                ><img src="./images/Main Logo.png" alt="" />
+                <h6>
+                  STAMINA <br />
+                  FITNESS
+                </h6>
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <div class="dashboardlogo">
+                    <a class="navbar-brand" href="#"
+                      ><img src="./images/Main Logo.png" alt="" />
+                      <h6>
+                        STAMINA <br />
+                        FITNESS
+                      </h6>
+                    </a>
+                  </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="topnav-list">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li  target="dashHome" class="nav-item sideButton active ">
+                    <a class="nav-link active" aria-current="page" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-table"></i><span>Dashboard</span></a>
+                  </li>
+                  <li target="Admin-profile" class="nav-item sideButton">
+                    <a class="nav-link" href="#">  <i  style="margin-right: 5px;" class="fa-solid fa-house"></i><span>Profile</span></a>
+                  </li>
+                  <li   target="regeteration" class="nav-item sideButton">
+                    <a class="nav-link" href="#">  <i  style="margin-right: 5px;" class="fa-regular fa-pen-to-square"></i
+                      ><span>Registration</span></a>
+                  </li>
+                  <li target="plan" class=" nav-item sideButton" >
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-list-check"></i><span>Plan</span></a>
+                  </li>
+                  <li  target="payment" class="nav-item sideButton" >
+                    <a class="nav-link" href="#">   <i   style="margin-right: 5px;"class="fa-solid fa-credit-card"></i><span>Payment</span></a>
+                  </li>
+                  <li  target="Inventory" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-warehouse"></i><span>Inventory</span></a>
+                  </li>
+                  <li  target="viewMembers" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-users"></i><span>View Members</span></a>
+                  </li>
+                  <li target="coaches" class="nav-item sideButton">
+                    <a class="nav-link" href="#">   <i  style="margin-right: 5px;" class="fa-solid fa-dumbbell"></i><span>Coaches</span></a>
+                  </li>
+                  <li target="report" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-book-open"></i><span>Report</span></a>
+                  </li>
+                  <li id="topnavlogout" style="margin-top: 3%; " class="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 5px;"></i
+                    ><span>Log out</span>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
       <div class="row">
+
+
+
         <div class="col-3 dashboard-links">
           <div class="text-center data">
             <img src="./images/PersonCircle.png" alt="" />
@@ -29,7 +104,7 @@
           <div class="nav">
             <ul>
               <li target="dashHome" class="sideButton active">
-                <i class="fa-solid fa-table"></i><span>Dashboard</span>
+                <i class="fa-solid fa-table"></i><span style=":hover{color:white;};">Dashboard</span>
               </li>
               <li target="Admin-profile" class="sideButton">
                 <i class="fa-solid fa-house"></i><span>Admin Profile</span>
@@ -63,8 +138,13 @@
             </ul>
           </div>
         </div>
+        
         <div class="col-12 col-lg-9 sections">
-          <div class="dashboardNav">
+
+          <div class="d-block d-md-none" style="height: 100px;"></div>
+
+
+          <div class="dashboardNav d-none d-md-flex">
             <div class="dashboardlogo">
               <a class="navbar-brand" href="#"
                 ><img src="./images/Main Logo.png" alt="" />

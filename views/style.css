@@ -550,3 +550,27 @@ th, td {
       font-size: 10px; 
   }
 }
+.Topnavpar
+{
+  height: 80px;
+}
+.topnav-list
+{
+  border-radius: 15px;
+  padding: 15px;
+  background-color:#1a1363;
+}
+.offcanvas-header
+{
+  height: 15%;
+}
+#topnavlogout
+{
+  color: black;
+  height: 40px;
+}
+#topnavlogout:hover
+{
+  cursor: pointer;
+  
+}
