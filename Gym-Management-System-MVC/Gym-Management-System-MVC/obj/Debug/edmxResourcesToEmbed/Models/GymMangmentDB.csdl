@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GymMangmentDB" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Coach">
+    <Key>
+      <PropertyRef Name="CoachID" />
+    </Key>
+    <Property Name="CoachID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Specialty" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Members" Relationship="Self.TrainMember" FromRole="Coach" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PurchaseDate" Type="DateTime" Precision="3" />
+    <Property Name="LastMaintenanceDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Receptionists" Relationship="Self.TrackEquipment" FromRole="Equipment" ToRole="Receptionist" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="MemberID" />
+    </Key>
+    <Property Name="MemberID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MemberHasMemberships" Relationship="Self.FK__MemberHas__Membe__66603565" FromRole="Member" ToRole="MemberHasMembership" />
+    <NavigationProperty Name="Payments" Relationship="Self.FK__Payment__MemberI__5441852A" FromRole="Member" ToRole="Payment" />
+    <NavigationProperty Name="Coaches" Relationship="Self.TrainMember" FromRole="Member" ToRole="Coach" />
+  </EntityType>
+  <EntityType Name="MemberHasMembership">
+    <Key>
+      <PropertyRef Name="MemberID" />
+      <PropertyRef Name="MembershipID" />
+    </Key>
+    <Property Name="MemberID" Type="Guid" Nullable="false" />
+    <Property Name="MembershipID" Type="Int32" Nullable="false" />
+    <Property Name="ExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="JoinDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__MemberHas__Membe__66603565" FromRole="MemberHasMembership" ToRole="Member" />
+    <NavigationProperty Name="Membership" Relationship="Self.FK__MemberHas__Membe__6754599E" FromRole="MemberHasMembership" ToRole="Membership" />
+  </EntityType>
+  <EntityType Name="Membership">
+    <Key>
+      <PropertyRef Name="MembershipID" />
+    </Key>
+    <Property Name="MembershipID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MemberHasMemberships" Relationship="Self.FK__MemberHas__Membe__6754599E" FromRole="Membership" ToRole="MemberHasMembership" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="Guid" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="PaymentMethod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__Payment__MemberI__5441852A" FromRole="Payment" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Receptionist">
+    <Key>
+      <PropertyRef Name="ReceptionistID" />
+    </Key>
+    <Property Name="ReceptionistID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salt" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Equipments" Relationship="Self.TrackEquipment" FromRole="Receptionist" ToRole="Equipment" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__MemberHas__Membe__66603565">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="MemberHasMembership" Type="Self.MemberHasMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="MemberHasMembership">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payment__MemberI__5441852A">
+    <End Role="Member" Type="Self.Member" Multiplicity="1" />
+    <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member">
+        <PropertyRef Name="MemberID" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MemberHas__Membe__6754599E">
+    <End Role="Membership" Type="Self.Membership" Multiplicity="1" />
+    <End Role="MemberHasMembership" Type="Self.MemberHasMembership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Membership">
+        <PropertyRef Name="MembershipID" />
+      </Principal>
+      <Dependent Role="MemberHasMembership">
+        <PropertyRef Name="MembershipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TrackEquipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="*" />
+    <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="*" />
+  </Association>
+  <Association Name="TrainMember">
+    <End Role="Coach" Type="Self.Coach" Multiplicity="*" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="GYM_ManagmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Coaches" EntityType="Self.Coach" />
+    <EntitySet Name="Equipments" EntityType="Self.Equipment" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <EntitySet Name="MemberHasMemberships" EntityType="Self.MemberHasMembership" />
+    <EntitySet Name="Memberships" EntityType="Self.Membership" />
+    <EntitySet Name="Payments" EntityType="Self.Payment" />
+    <EntitySet Name="Receptionists" EntityType="Self.Receptionist" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK__MemberHas__Membe__66603565" Association="Self.FK__MemberHas__Membe__66603565">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="MemberHasMembership" EntitySet="MemberHasMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payment__MemberI__5441852A" Association="Self.FK__Payment__MemberI__5441852A">
+      <End Role="Member" EntitySet="Members" />
+      <End Role="Payment" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MemberHas__Membe__6754599E" Association="Self.FK__MemberHas__Membe__6754599E">
+      <End Role="Membership" EntitySet="Memberships" />
+      <End Role="MemberHasMembership" EntitySet="MemberHasMemberships" />
+    </AssociationSet>
+    <AssociationSet Name="TrackEquipment" Association="Self.TrackEquipment">
+      <End Role="Equipment" EntitySet="Equipments" />
+      <End Role="Receptionist" EntitySet="Receptionists" />
+    </AssociationSet>
+    <AssociationSet Name="TrainMember" Association="Self.TrainMember">
+      <End Role="Coach" EntitySet="Coaches" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

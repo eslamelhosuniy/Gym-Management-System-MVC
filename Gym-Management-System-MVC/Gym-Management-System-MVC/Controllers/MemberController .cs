@@ -10,12 +10,16 @@ public class MemberController : Controller
     public ActionResult Index()
     {
         var members = db.Members.ToList();
+        ViewBag.ShowNav = true;
+
         return View(members);
     }
 
     // أكشن لإضافة عضو جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
+
         return View();
     }
 
@@ -28,6 +32,7 @@ public class MemberController : Controller
             db.SaveChanges(); // حفظ التغييرات
             return RedirectToAction("Index"); // إعادة التوجيه إلى صفحة عرض الأعضاء
         }
+        ViewBag.ShowNav = true;
 
         return View(member); // في حالة وجود خطأ في البيانات، نعرض نموذج الإضافة مرة أخرى
     }

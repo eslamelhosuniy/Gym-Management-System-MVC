@@ -11,6 +11,8 @@ public class ReceptionistController : Controller
     public ActionResult Index()
     {
         var receptionists = db.Receptionists.ToList();
+        ViewBag.ShowNav = true;
+
         return View(receptionists);
     }
 
@@ -22,12 +24,16 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(receptionist);
     }
 
     // إضافة موظف استقبال جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
+
         return View();
     }
 
@@ -42,6 +48,8 @@ public class ReceptionistController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
+
         return View(receptionist);
     }
 
@@ -52,6 +60,8 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(db.Receptionists.Find(id));
     }
 
@@ -65,6 +75,8 @@ public class ReceptionistController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
+
         return View(receptionist);
     }
 
@@ -76,6 +88,8 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(receptionist);
     }
 

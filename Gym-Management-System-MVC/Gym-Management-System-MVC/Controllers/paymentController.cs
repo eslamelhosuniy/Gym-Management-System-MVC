@@ -11,6 +11,8 @@ public class PaymentController : Controller
     public ActionResult Index()
     {
         var payments = db.Payments.ToList();
+        ViewBag.ShowNav = true;
+
         return View(payments);
     }
 
@@ -22,6 +24,8 @@ public class PaymentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(payment);
     }
 
@@ -29,6 +33,8 @@ public class PaymentController : Controller
     public ActionResult Create()
     {
         ViewBag.MemberID = new SelectList(db.Members, "MemberID", "Name"); // قائمة الأعضاء
+        ViewBag.ShowNav = true;
+
         return View();
     }
 
@@ -45,6 +51,8 @@ public class PaymentController : Controller
             return RedirectToAction("Index");
         }
         ViewBag.MemberID = new SelectList(db.Members, "MemberID", "Name", payment.MemberID);
+        ViewBag.ShowNav = true;
+
         return View(payment);
     }
 
@@ -57,6 +65,8 @@ public class PaymentController : Controller
             return HttpNotFound();
         }
         ViewBag.MemberID = new SelectList(db.Members, "MemberID", "Name", payment.MemberID);
+        ViewBag.ShowNav = true;
+
         return View(payment);
     }
 
@@ -71,6 +81,8 @@ public class PaymentController : Controller
             return RedirectToAction("Index");
         }
         ViewBag.MemberID = new SelectList(db.Members, "MemberID", "Name", payment.MemberID);
+        ViewBag.ShowNav = true;
+
         return View(payment);
     }
 
@@ -82,6 +94,8 @@ public class PaymentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(payment);
     }
 

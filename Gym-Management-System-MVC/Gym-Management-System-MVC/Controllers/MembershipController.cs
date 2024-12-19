@@ -10,6 +10,8 @@ public class MembershipController : Controller
     public ActionResult Index()
     {
         var memberships = db.Memberships.ToList();
+        ViewBag.ShowNav = true;
+
         return View(memberships);
     }
 
@@ -21,13 +23,18 @@ public class MembershipController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(membership);
     }
 
     // إضافة عضوية جديدة
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
+
         return View();
+
     }
 
     [HttpPost]
@@ -40,6 +47,8 @@ public class MembershipController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
+
         return View(membership);
     }
 
@@ -51,6 +60,8 @@ public class MembershipController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(membership);
     }
 
@@ -64,6 +75,8 @@ public class MembershipController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
+
         return View(membership);
     }
 
@@ -75,6 +88,8 @@ public class MembershipController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
+
         return View(membership);
     }
 

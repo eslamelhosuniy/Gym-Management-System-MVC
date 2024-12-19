@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var showNav = ViewBag.ShowNav ?? false; // إذا لم يتم التعيين، اجعل القيمة false
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,73 +21,55 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <div class="container-fluid h-100 dashBoard">
-        <!--top navbar-->
-        <div class="row">
-            <div class="col-3 dashboard-links">
-                <div class="text-center data">
-                    
-                    <img src="~/images/PersonCircle.png" />
-                    <h3>Administrator Name</h3>
-                    <h6>juan.delacruz@gmail.com</h6>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li target="dashHome" class="sideButton ">
-                            <i class="fa-solid fa-table"></i><span>Dashboard</span>
-                        </li>
-                        <li target="Admin-profile" class="sideButton">
-                            <i class="fa-solid fa-house"></i><span>Admin Profile</span>
-                        </li>
-                        <li target="regeteration" class="sideButton">
-                            <i class="fa-regular fa-pen-to-square"></i><span>Registration</span>
-                        </li>
-                        <li target="plan" class="sideButton">
-                            <i class="fa-solid fa-list-check"></i><span>Plan</span>
-                        </li>
-                        <li target="payment" class="sideButton">
-                            <i class="fa-solid fa-credit-card"></i><span>Payment</span>
-                        </li>
-                        <li target="Inventory" class="sideButton">
-                            <i class="fa-solid fa-warehouse"></i><span>Inventory</span>
-                        </li>
-                        <li target="viewMembers" class="sideButton">
-                            <i class="fa-solid fa-users"></i><span>View Members</span>
-                        </li>
-                        <li target="coaches" class="sideButton">
-                            <i class="fa-solid fa-dumbbell"></i><a href="/Coach/Index">Coaches</a>
-                        </li>
-                        <li target="report" class="sideButton">
-                            <i class="fa-solid fa-book-open"></i><span>Report</span>
-                        </li>
-                        <li style="margin-top: 30%" class="logout">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log out</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-9 sections">
-                <div class="dashboardNav">
-                    <div class="dashboardlogo">
-                        <a class="navbar-brand" href="#">
-                            <img src="~/images/Main Logo.png" />
-                            <h6>
-                                STAMINA <br />
-                                FITNESS
-                            </h6>
-                        </a>
+    @if (ViewBag.ShowNav == true)
+    {
+        <div class="container-fluid h-100 dashBoard">
+            <div class="row">
+                <div class="col-3 dashboard-links">
+                    <div class="text-center data">
+                        <img src="~/images/PersonCircle.png" />
+                        <h3>Administrator Name</h3>
+                        <h6>juan.delacruz@gmail.com</h6>
                     </div>
-                    <div class="notification me-4">
-                        <li><a href="#">feedback</a></li>
-                        <i class="fa-solid fa-bell"></i>
+                    <div class="nav">
+                        <ul>
+                            <li class="sideButton"><i class="fa-solid fa-table"></i><a>Dashboard</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-house"></i><a href="/Receptionist/Index">Admin Profile</a></li>
+                            <li class="sideButton"><i class="fa-regular fa-pen-to-square"></i><a href="/Member/Create">Registration</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-list-check"></i><a href="/Membership/Index">Plan</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-credit-card"></i><a href="/Payment/Create">Payment</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-warehouse"></i><a href="/Equipment/Index">Inventory</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-users"></i><a href="/Member/Index">View Members</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-dumbbell"></i><a href="/Coach/Index">Coaches</a></li>
+                            <li class="sideButton"><i class="fa-solid fa-book-open"></i><a href="/Payment/Index">Report</a></li>
+                            <li class="logout" style="margin-top: 30%">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i><a>Log out</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                @RenderBody()
+                <div class="col-12 col-lg-9 sections">
+                    <div class="dashboardNav">
+                        <div class="dashboardlogo">
+                            <a class="navbar-brand" href="#">
+                                <img src="~/images/Main Logo.png" />
+                                <h6>STAMINA <br /> FITNESS</h6>
+                            </a>
+                        </div>
+                        <div class="notification me-4">
+                            <li><a href="#">feedback</a></li>
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                    </div>
+                    @RenderBody()
+                </div>
             </div>
         </div>
-    </div>
-
+    }
+    else
+    {
+        @RenderBody()
+    }
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>

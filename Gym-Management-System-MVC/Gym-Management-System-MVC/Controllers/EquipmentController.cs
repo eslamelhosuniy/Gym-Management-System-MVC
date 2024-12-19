@@ -11,6 +11,7 @@ public class EquipmentController : Controller
     public ActionResult Index()
     {
         var equipmentList = db.Equipments.ToList();
+        ViewBag.ShowNav = true;
         return View(equipmentList);
     }
 
@@ -22,12 +23,14 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
     // إضافة جهاز جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
         return View();
     }
 
@@ -43,6 +46,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -54,6 +58,7 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -67,6 +72,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -78,6 +84,7 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 

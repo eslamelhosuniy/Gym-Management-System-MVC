@@ -11,12 +11,14 @@ public class CoachController : Controller
     public ActionResult Index()
     {
         var coaches = db.Coaches.ToList(); // جلب جميع المدربين من قاعدة البيانات
+        ViewBag.ShowNav = true;
         return View(coaches); // إرسال المدربين إلى الـ View
     }
 
     // عرض نموذج إضافة مدرب جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
         return View();
     }
 
@@ -29,6 +31,7 @@ public class CoachController : Controller
             db.SaveChanges(); // حفظ التغييرات في قاعدة البيانات
             return RedirectToAction("Index"); // إعادة التوجيه إلى صفحة المدربين بعد الإضافة
         }
+        ViewBag.ShowNav = true;
         return View(coach);
     }
 
@@ -40,6 +43,7 @@ public class CoachController : Controller
         {
             return HttpNotFound(); // في حالة عدم العثور على المدرب
         }
+        ViewBag.ShowNav = true;
         return View(coach); // عرض بيانات المدرب في النموذج
     }
 
@@ -52,6 +56,7 @@ public class CoachController : Controller
             db.SaveChanges(); // حفظ التغييرات في قاعدة البيانات
             return RedirectToAction("Index"); // إعادة التوجيه إلى صفحة المدربين بعد التعديل
         }
+        ViewBag.ShowNav = true;
         return View(coach);
     }
 
@@ -77,6 +82,7 @@ public class CoachController : Controller
 
         db.Coaches.Remove(coach); // حذف المدرب من قاعدة البيانات
         db.SaveChanges(); // حفظ التغييرات في قاعدة البيانات
+
         return RedirectToAction("Index"); // إعادة التوجيه إلى صفحة المدربين بعد الحذف
     }
 }
