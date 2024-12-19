@@ -111,3 +111,44 @@ displayForm("form-add-equipment", "btn-close-Inventory", "Inventoryform");
 displayForm("edit-profile-button", "cancel-edit", "profile-edit-form");
 
 
+function filterRows(event) {
+    const select = event.target; 
+    const value = select.value; 
+    const table = select.closest('.controls').nextElementSibling; 
+    const rows = table.getElementsByTagName('tr'); 
+    let count = 0; 
+    for (let i = 1; i < rows.length; i++) { 
+        if (value === "all") {
+            rows[i].style.display = ''; 
+        } else if (count < parseInt(value)) {
+            rows[i].style.display = ''; 
+            count++;
+        } else {
+            rows[i].style.display = 'none'; 
+        }
+    }
+}
+
+function searchTable(event) {
+    const input = event.target; 
+    const filter = input.value.toLowerCase(); 
+    const table = input.closest('.controls').nextElementSibling; 
+    const rows = table.getElementsByTagName('tr'); 
+
+    for (let i = 1; i < rows.length; i++) { 
+        const cells = rows[i].getElementsByTagName('td');
+        let match = false;
+
+        for (let j = 0; j < cells.length; j++) {
+            if (cells[j]) {
+                const cellValue = cells[j].textContent || cells[j].innerText;
+                if (cellValue.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+        }
+
+        rows[i].style.display = match ? '' : 'none'; 
+    }
+}
