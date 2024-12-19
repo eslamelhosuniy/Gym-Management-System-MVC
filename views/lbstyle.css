@@ -201,27 +201,11 @@ footer .container-fluid div li{
   padding: 0px;
   position: relative;
   left:30px ;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.inerbox1{
-    border: #1A1363 solid 3px;
-    height: 163px;
-    width: 130px;
-    border-radius: 15px;
-    position: relative;
-    right: 4px;
-    top: 6px;
-    text-align: center;
 
-}
-.inerbox5{
-    border: #1A1363 solid 3px;
-    height: 163px;
-    width: 130px;
-    border-radius: 15px;
-   
-    
-   
-}
 .outerbox3
 {
     background-color: #6e65ce;

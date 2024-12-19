@@ -19,7 +19,82 @@
   <body>
     <div class="container-fluid h-100 dashBoard">
       <!--top navbar-->
+      <div class="Topnavpar d-block d-md-none">
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <div class="dashboardlogo">
+              <a class="navbar-brand" href="#"
+                ><img src="./images/Main Logo.png" alt="" />
+                <h6>
+                  STAMINA <br />
+                  FITNESS
+                </h6>
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <div class="dashboardlogo">
+                    <a class="navbar-brand" href="#"
+                      ><img src="./images/Main Logo.png" alt="" />
+                      <h6>
+                        STAMINA <br />
+                        FITNESS
+                      </h6>
+                    </a>
+                  </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="topnav-list">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li  target="dashHome" class="nav-item sideButton active ">
+                    <a class="nav-link active" aria-current="page" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-table"></i><span>Dashboard</span></a>
+                  </li>
+                  <li target="Admin-profile" class="nav-item sideButton">
+                    <a class="nav-link" href="#">  <i  style="margin-right: 5px;" class="fa-solid fa-house"></i><span>Profile</span></a>
+                  </li>
+                  <li   target="regeteration" class="nav-item sideButton">
+                    <a class="nav-link" href="#">  <i  style="margin-right: 5px;" class="fa-regular fa-pen-to-square"></i
+                      ><span>Registration</span></a>
+                  </li>
+                  <li target="plan" class=" nav-item sideButton" >
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-list-check"></i><span>Plan</span></a>
+                  </li>
+                  <li  target="payment" class="nav-item sideButton" >
+                    <a class="nav-link" href="#">   <i   style="margin-right: 5px;"class="fa-solid fa-credit-card"></i><span>Payment</span></a>
+                  </li>
+                  <li  target="Inventory" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-warehouse"></i><span>Inventory</span></a>
+                  </li>
+                  <li  target="viewMembers" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-users"></i><span>View Members</span></a>
+                  </li>
+                  <li target="coaches" class="nav-item sideButton">
+                    <a class="nav-link" href="#">   <i  style="margin-right: 5px;" class="fa-solid fa-dumbbell"></i><span>Coaches</span></a>
+                  </li>
+                  <li target="report" class="nav-item sideButton">
+                    <a class="nav-link" href="#"> <i  style="margin-right: 5px;" class="fa-solid fa-book-open"></i><span>Report</span></a>
+                  </li>
+                  <li id="topnavlogout" style="margin-top: 3%; " class="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="margin-right: 5px;"></i
+                    ><span>Log out</span>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
       <div class="row">
+
+
+
         <div class="col-3 dashboard-links">
           <div class="text-center data">
             <img src="./images/PersonCircle.png" alt="" />
@@ -29,7 +104,7 @@
           <div class="nav">
             <ul>
               <li target="dashHome" class="sideButton active">
-                <i class="fa-solid fa-table"></i><span>Dashboard</span>
+                <i class="fa-solid fa-table"></i><span style=":hover{color:white;};">Dashboard</span>
               </li>
               <li target="Admin-profile" class="sideButton">
                 <i class="fa-solid fa-house"></i><span>Admin Profile</span>
@@ -63,8 +138,13 @@
             </ul>
           </div>
         </div>
+        
         <div class="col-12 col-lg-9 sections">
-          <div class="dashboardNav">
+
+          <div class="d-block d-md-none" style="height: 100px;"></div>
+
+
+          <div class="dashboardNav d-none d-md-flex">
             <div class="dashboardlogo">
               <a class="navbar-brand" href="#"
                 ><img src="./images/Main Logo.png" alt="" />
@@ -222,7 +302,58 @@
               </form>
             </div>
             <div class="plan-table">
-              <!--plan Table-->
+             
+              <div class="controls">
+                <h6>Show Entities:</h6>
+                <select class="rowsSelect" onchange="filterRows(event)">
+                    <option value="all">all</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+            </div>
+            
+            <table class="dataTable">
+                <thead>
+                    <tr>
+                        <th> Plan Name</th>
+                        <th>Validity</th>
+                        <th>Amount</th>
+                        
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>1 Month</td>
+                      <td>1</td>
+                      <td>800</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+
+                    <tr>
+                      <td>3 Month</td>
+                      <td>3</td>
+                      <td>2200</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>6 Month</td>
+                      <td>6</td>
+                      <td>4300</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>Annual</td>
+                      <td>12</td>
+                      <td>8500</td>
+                  
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
           </div>
           <div id="payment" class="section container payment">
@@ -321,7 +452,61 @@
               </form>
             </div>
             <div class="coach-table">
-              <!--Coach table-->
+              <h2 style="color: white;margin-bottom:1rem;">Mange Coaches</h2>
+                <div class="controls">
+                  <h6>Show Entities:</h6>
+                  <select class="rowsSelect" onchange="filterRows(event)">
+                      <option value="all">all</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                  </select>
+                  <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+              </div>
+              
+              <table class="dataTable">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Coach ID</th>
+                          <th>Contact</th>
+                          <th>Date Expiaration</th>
+                          <th>Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>Coach 1</td>
+                        <td>SFM2301N1</td>
+                        <td>Jan 11</td>
+                        <td>Feb 11</td>
+                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      </tr>
+  
+                      <tr>
+                        <td>Coach 2</td>
+                        <td>SFM2301N2</td>
+                        <td>Jan 11</td>
+                        <td>Feb 11</td>
+                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      </tr>
+                      <tr>
+                        <td>Coach 3</td>
+                        <td>SFM2301N3</td>
+                        <td>Jan 11</td>
+                        <td>Feb 11</td>
+                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      </tr>
+                      <tr>
+                        <td>Coach 4</td>
+                        <td>SFM2301N4</td>
+                        <td>Jan 11</td>
+                        <td>Feb 11</td>
+                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      </tr>
+                  </tbody>
+              </table>
             </div>
           </div>
           <div id="Inventory" class="section container Inventory">
@@ -385,7 +570,56 @@
               </form>
             </div>
             <div class="equuipment-table">
-              <!--equuipment table-->
+              <h2 style="color: white;margin-bottom:1rem;">Manage Equipment</h2>
+              <div class="controls">
+                <h6>Show Entities:</h6>
+                <select class="rowsSelect" onchange="filterRows(event)">
+                    <option value="all">all</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+            </div>
+            
+            <table class="dataTable">
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>Total no</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Treadmill</td>
+                      <td>1</td>
+                      <td>Acitve</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+
+                    <tr>
+                      <td>10 Dumbell</td>
+                      <td>3</td>
+                      <td>Active</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>15 Dumbell</td>
+                      <td>6</td>
+                      <td>Inactive</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>20 Dumbell</td>
+                      <td>12</td>
+                      <td>Active</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
           </div>
           <div id="viewMembers" class="section container viewMembers">
@@ -393,7 +627,61 @@
               <h1>Active Members</h1>
             </div>
             <div class="member-table">
-              <!--member Table-->
+              <h2 style="color: white;margin-bottom:1rem;">Gym Members</h2>
+              <div class="controls">
+                <h6>Show Entities:</h6>
+                <select class="rowsSelect" onchange="filterRows(event)">
+                    <option value="all">all</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+            </div>
+            
+            <table class="dataTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Member ID</th>
+                        <th>Date Enrolled</th>
+                        <th>Date Expiaration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Member 1</td>
+                      <td>SFM2301N1</td>
+                      <td>Jan 11</td>
+                      <td>Feb 11</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+
+                    <tr>
+                      <td>Member 2</td>
+                      <td>SFM2301N2</td>
+                      <td>Jan 11</td>
+                      <td>Feb 11</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>Member 3</td>
+                      <td>SFM2301N3</td>
+                      <td>Jan 11</td>
+                      <td>Feb 11</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                    <tr>
+                      <td>Member 4</td>
+                      <td>SFM2301N4</td>
+                      <td>Jan 11</td>
+                      <td>Feb 11</td>
+                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
           </div>
           <div id="report" class="section container report">
