@@ -11,6 +11,28 @@ if (document.getElementById("form-add-coach")) {
     document.querySelector(".sideButton[target='coaches']").classList.add('active');
 
     displayForm("form-add-coach", "btn-close-coach", "coachform");
+}else if (document.getElementById("form-add-plan")) {
+    document.querySelector(".sideButton[target='plan']").classList.add('active');
+
+    displayForm("form-add-plan", "btn-close-plan", "planform");
+}else if (document.getElementById("form-add-equipment")) {
+    document.querySelector(".sideButton[target='Inventory']").classList.add('active');
+
+    displayForm("form-add-equipment", "btn-close-Inventory", "Inventoryform");
+}else if (document.getElementById("edit-profile-button")) {
+    document.querySelector(".sideButton[target='Admin-profile']").classList.add('active');
+
+    displayForm("edit-profile-button", "cancel-edit", "profile-edit-form");
+} else if (document.getElementById("dashHome")) {
+    document.querySelector(".sideButton[target='dashHome']").classList.add('active');
+} else if (document.getElementById("regeteration")) {
+    document.querySelector(".sideButton[target='regeteration']").classList.add('active');
+} else if (document.getElementById("payment")) {
+    document.querySelector(".sideButton[target='payment']").classList.add('active');
+} else if (document.getElementById("viewMembers")) {
+    document.querySelector(".sideButton[target='viewMembers']").classList.add('active');
+} else if (document.getElementById("report")) {
+    document.querySelector(".sideButton[target='report']").classList.add('active');
 }
 
 
