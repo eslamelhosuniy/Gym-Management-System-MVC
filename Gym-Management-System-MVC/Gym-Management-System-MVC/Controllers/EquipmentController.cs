@@ -11,7 +11,6 @@ public class EquipmentController : Controller
     public ActionResult Index()
     {
         var equipmentList = db.Equipments.ToList();
-        ViewBag.ShowNav = true;
         return View(equipmentList);
     }
 
@@ -23,14 +22,12 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
     // إضافة جهاز جديد
     public ActionResult Create()
     {
-        ViewBag.ShowNav = true;
         return View();
     }
 
@@ -46,7 +43,6 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -58,7 +54,6 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -72,7 +67,6 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -84,17 +78,47 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public ActionResult DeleteConfirmed(Guid id)
+    public async Task<IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
     {
-        var equipment = db.Equipments.Find(id);
-        db.Equipments.Remove(equipment);
-        db.SaveChanges();
-        return RedirectToAction("Index");
+        // جلب Receptionist من الـ DB بناءً على الـ receptionistId
+        var receptionist = await _context.Receptionists
+            .FirstOrDefaultAsync(r => r.ReceptionistID == receptionistId);
+
+        // جلب الـ Equipment بناءً على الـ equipmentId
+        var equipment = await _context.Equipments
+            .FirstOrDefaultAsync(e => e.EquipmentID == equipmentId);
+
+        if (receptionist != null && equipment != null)
+        {
+            // ربط الـ Equipment بالـ Receptionist (بإضافته إلى مجموعة الـ Equipments الخاصة بـ Receptionist)
+            receptionist.Equipments.Add(equipment);
+
+            // حفظ التغييرات في قاعدة البيانات
+            await _context.SaveChangesAsync();
+
+            // إعادة توجيه إلى صفحة عرض البيانات أو صفحة أخرى
+            return RedirectToAction("Index", new { receptionistId });
+        }
+
+        return NotFound("Receptionist or Equipment not found.");
+    }
+    public async Task<IActionResult> Index(Guid receptionistId)
+    {
+        var receptionist = await _context.Receptionists
+            .Include(r => r.Equipments)
+            .FirstOrDefaultAsync(r => r.ReceptionistID == receptionistId);
+
+        if (receptionist == null)
+        {
+            return NotFound();
+        }
+
+        // جلب جميع الـ Equipments المتاحة لعرضها في الـ View
+        ViewBag.AllEquipments = await _context.Equipments.ToListAsync();
+
+        return View(receptionist);
     }
 }
