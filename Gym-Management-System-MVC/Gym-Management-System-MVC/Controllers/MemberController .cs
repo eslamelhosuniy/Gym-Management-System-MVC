@@ -31,32 +31,30 @@ public class MemberController : Controller
 
         return View(member); // في حالة وجود خطأ في البيانات، نعرض نموذج الإضافة مرة أخرى
     }
-    public ActionResult LoginAndDashboard(string email, string password)
+    public ActionResult Edit(Guid id)
     {
-        // تحقق من صحة البريد الإلكتروني وكلمة السر
-        var member = db.Members.FirstOrDefault(m => m.Email == email && m.Password == password);
-
+        var member = db.Members.Find(id);
         if (member == null)
         {
-            // إذا كانت البيانات غير صحيحة، يتم إضافة رسالة خطأ
-            TempData["ErrorMessage"] = "البريد الإلكتروني أو كلمة المرور غير صحيحة. من فضلك حاول مرة أخرى.";
-            return RedirectToAction("Login"); // إعادة التوجيه إلى صفحة تسجيل الدخول
+            return HttpNotFound(); // إذا كان العضو مش موجود
         }
-
-        // إذا كانت البيانات صحيحة، نقوم بعرض بيانات العضو
-        var coaches = db.Coaches.Where(c => c.MemberId == member.Id).ToList();
-        var trainings = db.Trainings.Where(t => t.MemberId == member.Id).ToList();
-
-        var model = new MemberDashboardViewModel
-        {
-            Member = member,
-            Coaches = coaches,
-            Trainings = trainings
-        };
-
-        return View("Dashboard", model); // عرض صفحة البيانات الخاصة بالعضو
+        return View(member); // عرض بيانات العضو في الفورم
     }
-    [HttpPost("{memberId}/AddMembership")]
+
+    // حفظ التعديلات بعد إرسال الفورم
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public ActionResult Edit(Member member)
+    {
+        if (ModelState.IsValid)
+        {
+            db.Entry(member).State = System.Data.Entity.EntityState.Modified; // تعديل حالة الكائن
+            db.SaveChanges(); // حفظ التعديلات في قاعدة البيانات
+            return RedirectToAction("Index"); // إعادة توجيه الصفحة الرئيسية بعد التعديل
+        }
+        return View(member); // إذا كان في خطأ في البيانات، إعادة عرض الفورم مع الأخطاء
+
+        [HttpPost("{memberId}/AddMembership")]
     public async Task<IActionResult> AddMembership(Guid memberId, [FromBody] AddMembershipDto dto)
     {
         // التحقق من وجود العضو
