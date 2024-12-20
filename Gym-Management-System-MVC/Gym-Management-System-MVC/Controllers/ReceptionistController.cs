@@ -14,17 +14,6 @@ public class ReceptionistController : Controller
         return View(receptionists);
     }
 
-    // عرض تفاصيل موظف استقبال
-    public ActionResult Details(Guid id)
-    {
-        var receptionist = db.Receptionists.Find(id);
-        if (receptionist == null)
-        {
-            return HttpNotFound();
-        }
-        return View(receptionist);
-    }
-
     // إضافة موظف استقبال جديد
     public ActionResult Create()
     {
@@ -99,28 +88,6 @@ public class ReceptionistController : Controller
         }
         return View(receptionist);
     }
-
-    // عرض صفحة إضافة عضو جديد
-    public ActionResult AddMember()
-    {
-        return View();
-    }
-
-    // إضافة عضو جديد
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult AddMember(Member member)
-    {
-        if (ModelState.IsValid)
-        {
-            member.MemberID = Guid.NewGuid(); // إنشاء ID جديد
-            db.Members.Add(member); // إضافة العضو الجديد
-            db.SaveChanges(); // حفظ التغييرات
-            return RedirectToAction("Index");
-        }
-        return View(member);
-    }
-
     // حفظ التغييرات في قاعدة البيانات
     public ActionResult SaveChanges()
     {
