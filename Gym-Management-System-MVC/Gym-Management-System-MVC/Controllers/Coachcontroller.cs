@@ -10,9 +10,9 @@ public class CoachController : Controller
     // عرض قائمة المدربين
     public ActionResult Index()
     {
-        var coaches = db.Coaches.ToList(); // جلب جميع المدربين من قاعدة البيانات
+        //var coaches = db.Coaches.ToList(); // جلب جميع المدربين من قاعدة البيانات
         ViewBag.ShowNav = true;
-        return View(coaches); // إرسال المدربين إلى الـ View
+        return View(); // إرسال المدربين إلى الـ View
     }
 
     // عرض نموذج إضافة مدرب جديد

@@ -100,7 +100,7 @@ footer .container-fluid div li {
   background-color: #1a1363;
   color: #ffffff;
   padding-top: 5%;
-  height: 817px;
+  height: 894px;
 }
 .dashBoard .col-3 .nav ul {
   list-style: none;
@@ -136,7 +136,7 @@ footer .container-fluid div li {
 
 .sections {
   width: 100%;
-  height: 819px;
+  height: 100%;
   background-color: #ece9e9;
 }
 .dashboardNav .dashboardlogo a {
@@ -429,9 +429,9 @@ th, td {
 
 .member-table
 {
-  margin-left:5px;
+margin-left: 7%;
+  width: 85%;
   background-color:#77749B ;
-  width: 80%;
   padding: 2%;
   border-radius: 20px;
 }
@@ -454,25 +454,25 @@ th, td {
 }
 .plan-table
 {
-  margin-left:5px;
+  margin-left:7%;
+  width: 85%;
   background-color:#77749B ;
-  width: 80%;
   padding: 2%;
   border-radius: 20px;
 }
 .coach-table
 {
-  margin-left:5px;
+margin-left: 7%;
+  width: 85%;
   background-color:#77749B ;
-  width: 80%;
   padding: 2%;
   border-radius: 20px;
 }
 .equuipment-table
 {
-  margin-left:5px;
+margin-left: 7%;
+  width: 85%;
   background-color:#77749B ;
-  width: 80%;
   padding: 2%;
   border-radius: 20px;
 }
