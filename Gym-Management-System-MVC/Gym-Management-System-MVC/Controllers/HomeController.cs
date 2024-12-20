@@ -7,14 +7,14 @@ public class HomeController : Controller
     {
         return View(); // عرض الصفحة الرئيسية
     }
-    HttpPost]
-    public IActionResult Login(string username, string password)
+     [HttpPost]
+    public IActionResult Login(string mail, string password)
     {
         // بيانات للمقارنة (مثال)
-        string validUsername = "admin";
+        string validmail = "admin123@gmail.com";
         string validPassword = "12345";
 
-        if (username == validUsername && password == validPassword)
+        if (mail == validmail && password == validPassword)
         {
             // لو البيانات صحيحة
             return RedirectToAction("Dashboard");
