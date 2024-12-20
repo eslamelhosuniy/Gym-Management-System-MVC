@@ -14,17 +14,6 @@ public class EquipmentController : Controller
         return View(equipmentList);
     }
 
-    // عرض تفاصيل جهاز رياضي
-    public ActionResult Details(Guid id)
-    {
-        var equipment = db.Equipments.Find(id);
-        if (equipment == null)
-        {
-            return HttpNotFound();
-        }
-        return View(equipment);
-    }
-
     // إضافة جهاز جديد
     public ActionResult Create()
     {
@@ -105,20 +94,6 @@ public class EquipmentController : Controller
 
         return NotFound("Receptionist or Equipment not found.");
     }
-    public async Task<IActionResult> Index(Guid receptionistId)
-    {
-        var receptionist = await _context.Receptionists
-            .Include(r => r.Equipments)
-            .FirstOrDefaultAsync(r => r.ReceptionistID == receptionistId);
-
-        if (receptionist == null)
-        {
-            return NotFound();
-        }
-
-        // جلب جميع الـ Equipments المتاحة لعرضها في الـ View
-        ViewBag.AllEquipments = await _context.Equipments.ToListAsync();
-
-        return View(receptionist);
-    }
+   
+  }
 }
