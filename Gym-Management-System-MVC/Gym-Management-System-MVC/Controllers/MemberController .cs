@@ -10,16 +10,12 @@ public class MemberController : Controller
     public ActionResult Index()
     {
         var members = db.Members.ToList();
-        ViewBag.ShowNav = true;
-
         return View(members);
     }
 
     // أكشن لإضافة عضو جديد
     public ActionResult Create()
     {
-        ViewBag.ShowNav = true;
-
         return View();
     }
 
@@ -32,10 +28,67 @@ public class MemberController : Controller
             db.SaveChanges(); // حفظ التغييرات
             return RedirectToAction("Index"); // إعادة التوجيه إلى صفحة عرض الأعضاء
         }
-        ViewBag.ShowNav = true;
 
         return View(member); // في حالة وجود خطأ في البيانات، نعرض نموذج الإضافة مرة أخرى
     }
+    public ActionResult LoginAndDashboard(string email, string password)
+    {
+        // تحقق من صحة البريد الإلكتروني وكلمة السر
+        var member = db.Members.FirstOrDefault(m => m.Email == email && m.Password == password);
+
+        if (member == null)
+        {
+            // إذا كانت البيانات غير صحيحة، يتم إضافة رسالة خطأ
+            TempData["ErrorMessage"] = "البريد الإلكتروني أو كلمة المرور غير صحيحة. من فضلك حاول مرة أخرى.";
+            return RedirectToAction("Login"); // إعادة التوجيه إلى صفحة تسجيل الدخول
+        }
+
+        // إذا كانت البيانات صحيحة، نقوم بعرض بيانات العضو
+        var coaches = db.Coaches.Where(c => c.MemberId == member.Id).ToList();
+        var trainings = db.Trainings.Where(t => t.MemberId == member.Id).ToList();
+
+        var model = new MemberDashboardViewModel
+        {
+            Member = member,
+            Coaches = coaches,
+            Trainings = trainings
+        };
+
+        return View("Dashboard", model); // عرض صفحة البيانات الخاصة بالعضو
+    }
+    [HttpPost("{memberId}/AddMembership")]
+    public async Task<IActionResult> AddMembership(Guid memberId, [FromBody] AddMembershipDto dto)
+    {
+        // التحقق من وجود العضو
+        var member = await _context.Members.FindAsync(memberId);
+        if (member == null)
+            return NotFound("Member not found");
+
+        // التحقق من وجود العضوية
+        var membership = await _context.Memberships.FindAsync(dto.MembershipID);
+        if (membership == null)
+            return NotFound("Membership not found");
+
+        // التأكد من أن تاريخ انتهاء العضوية في المستقبل
+        if (dto.ExpiryDate <= DateTime.Now)
+            return BadRequest("Expiry date must be in the future");
+
+        // إضافة العلاقة بين العضو والعضوية
+        var memberHasMembership = new MemberHasMembership
+        {
+            MemberID = memberId,
+            MembershipID = dto.MembershipID,
+            ExpiryDate = dto.ExpiryDate,
+            JoinDate = DateTime.Now
+        };
+
+        _context.MemberHasMemberships.Add(memberHasMembership);
+        await _context.SaveChangesAsync();
+
+        return Ok("Membership added successfully.");
+        return View("Membership", memberHasMembership);
+
+
+    }
+
 }
-
-
