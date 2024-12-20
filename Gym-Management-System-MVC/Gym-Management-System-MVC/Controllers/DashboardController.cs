@@ -27,5 +27,23 @@ namespace Gym_Management_System_MVC.Controllers
 
             return View();
         }
+        public ActionResult Index()
+        {
+            var equipments = db.Equipments.ToList(); // جلب جميع الأجهزة من قاعدة البيانات
+            return View(equipments); // عرض البيانات في الـ View
+        }
+        public ActionResult CalculateSale()
+        {
+            // جلب عدد الأعضاء في قاعدة البيانات
+            int memberCount = db.Members.Count();
+
+            // حساب الـ Sale عن طريق قسمة عدد الأعضاء على 100
+            double sale = (double)memberCount / 100;
+
+            // تمرير قيمة الـ Sale للـ View
+            ViewBag.Sale = sale;
+
+            return View(); // عرض النتيجة في الـ View
+        }
     }
 }
