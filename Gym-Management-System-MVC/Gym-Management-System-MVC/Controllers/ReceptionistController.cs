@@ -11,8 +11,6 @@ public class ReceptionistController : Controller
     public ActionResult Index()
     {
         var receptionists = db.Receptionists.ToList();
-        ViewBag.ShowNav = true;
-
         return View(receptionists);
     }
 
@@ -24,16 +22,12 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
-
         return View(receptionist);
     }
 
     // إضافة موظف استقبال جديد
     public ActionResult Create()
     {
-        ViewBag.ShowNav = true;
-
         return View();
     }
 
@@ -48,8 +42,6 @@ public class ReceptionistController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-        ViewBag.ShowNav = true;
-
         return View(receptionist);
     }
 
@@ -60,8 +52,6 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
-
         return View(db.Receptionists.Find(id));
     }
 
@@ -75,8 +65,6 @@ public class ReceptionistController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-        ViewBag.ShowNav = true;
-
         return View(receptionist);
     }
 
@@ -88,8 +76,6 @@ public class ReceptionistController : Controller
         {
             return HttpNotFound();
         }
-        ViewBag.ShowNav = true;
-
         return View(receptionist);
     }
 
@@ -102,4 +88,52 @@ public class ReceptionistController : Controller
         db.SaveChanges();
         return RedirectToAction("Index");
     }
+    
+    // عرض تفاصيل موظف استقبال
+    public ActionResult Details(Guid id)
+    {
+        var receptionist = db.Receptionists.Find(id);
+        if (receptionist == null)
+        {
+            return HttpNotFound();
+        }
+        return View(receptionist);
+    }
+
+    // عرض صفحة إضافة عضو جديد
+    public ActionResult AddMember()
+    {
+        return View();
+    }
+
+    // إضافة عضو جديد
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public ActionResult AddMember(Member member)
+    {
+        if (ModelState.IsValid)
+        {
+            member.MemberID = Guid.NewGuid(); // إنشاء ID جديد
+            db.Members.Add(member); // إضافة العضو الجديد
+            db.SaveChanges(); // حفظ التغييرات
+            return RedirectToAction("Index");
+        }
+        return View(member);
+    }
+
+    // حفظ التغييرات في قاعدة البيانات
+    public ActionResult SaveChanges()
+    {
+        try
+        {
+            db.SaveChanges(); // حفظ التغييرات
+            TempData["SuccessMessage"] = "تم الحفظ بنجاح!";
+        }
+        catch (Exception ex)
+        {
+            TempData["ErrorMessage"] = $"حدث خطأ أثناء الحفظ: {ex.Message}";
+        }
+        return RedirectToAction("Index");
+    }
 }
+
