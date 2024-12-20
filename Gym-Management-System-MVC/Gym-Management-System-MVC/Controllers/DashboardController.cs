@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Gym_Management_System_MVC.Models; 
+using Gym_Management_System_MVC.Models;
 namespace Gym_Management_System_MVC.Controllers
 {
     public class DashboardController : Controller
