@@ -84,8 +84,6 @@ footer .container-fluid{
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    margin-left: 100px;
-    
 }
 footer .container-fluid div{
     margin: 0 10px;
