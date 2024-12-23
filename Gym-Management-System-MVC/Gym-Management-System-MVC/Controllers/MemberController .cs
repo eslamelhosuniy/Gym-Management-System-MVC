@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 using Gym_Management_System_MVC.Models;
 
@@ -31,7 +33,7 @@ public class MemberController : Controller
 
         return View(member); // في حالة وجود خطأ في البيانات، نعرض نموذج الإضافة مرة أخرى
     }
-    public ActionResult Edit(Guid id)
+    public ActionResult Edit(System.Guid id)
     {
         var member = db.Members.Find(id);
         if (member == null)
@@ -53,40 +55,45 @@ public class MemberController : Controller
             return RedirectToAction("Index"); // إعادة توجيه الصفحة الرئيسية بعد التعديل
         }
         return View(member); // إذا كان في خطأ في البيانات، إعادة عرض الفورم مع الأخطاء
+    }
 
-        [HttpPost("{memberId}/AddMembership")]
-    public async Task<IActionResult> AddMembership(Guid memberId, [FromBody] AddMembershipDto dto)
+    public async Task<IActionResult> AddMembership(System.Guid memberId, [FromBody] AddMembershipDto dto)
     {
         // التحقق من وجود العضو
-        var member = await _context.Members.FindAsync(memberId);
+        var member = await db.Members.FindAsync(memberId);
         if (member == null)
-            return NotFound("Member not found");
+            return (IActionResult)HttpNotFound("Member not found");
 
         // التحقق من وجود العضوية
-        var membership = await _context.Memberships.FindAsync(dto.MembershipID);
+        var membership = await db.Memberships.FindAsync(dto.MembershipID);
         if (membership == null)
-            return NotFound("Membership not found");
+            return (IActionResult)HttpNotFound("Membership not found");
 
         // التأكد من أن تاريخ انتهاء العضوية في المستقبل
-        if (dto.ExpiryDate <= DateTime.Now)
+        if (dto.ExpiryDate <= DateTime.UtcNow)
             return BadRequest("Expiry date must be in the future");
-
         // إضافة العلاقة بين العضو والعضوية
         var memberHasMembership = new MemberHasMembership
         {
             MemberID = memberId,
-            MembershipID = dto.MembershipID,
+            MembershipID = dto.MembershipId,
             ExpiryDate = dto.ExpiryDate,
             JoinDate = DateTime.Now
         };
 
-        _context.MemberHasMemberships.Add(memberHasMembership);
-        await _context.SaveChangesAsync();
+        db.MemberHasMemberships.Add(memberHasMembership);
+        await db.SaveChangesAsync();
 
-        return Ok("Membership added successfully.");
-        return View("Membership", memberHasMembership);
-
-
+        return Ok(new { Message = "Membership added successfully.", Data = memberHasMembership });
     }
 
+    private IActionResult Ok(object value)
+    {
+        throw new NotImplementedException();
+    }
+
+    private IActionResult BadRequest(string v)
+    {
+        throw new NotImplementedException();
+    }
 }

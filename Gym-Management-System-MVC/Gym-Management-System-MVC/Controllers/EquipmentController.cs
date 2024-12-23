@@ -1,6 +1,8 @@
 ﻿using Gym_Management_System_MVC.Models;
 using System;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 public class EquipmentController : Controller
@@ -73,11 +75,11 @@ public class EquipmentController : Controller
     public async Task<IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
     {
         // جلب Receptionist من الـ DB بناءً على الـ receptionistId
-        var receptionist = await _context.Receptionists
+        var receptionist = await db.Receptionists
             .FirstOrDefaultAsync(r => r.ReceptionistID == receptionistId);
 
         // جلب الـ Equipment بناءً على الـ equipmentId
-        var equipment = await _context.Equipments
+        var equipment = await db.Equipments
             .FirstOrDefaultAsync(e => e.EquipmentID == equipmentId);
 
         if (receptionist != null && equipment != null)
@@ -86,14 +88,13 @@ public class EquipmentController : Controller
             receptionist.Equipments.Add(equipment);
 
             // حفظ التغييرات في قاعدة البيانات
-            await _context.SaveChangesAsync();
+            await db.SaveChangesAsync();
 
             // إعادة توجيه إلى صفحة عرض البيانات أو صفحة أخرى
-            return RedirectToAction("Index", new { receptionistId });
+            return (IActionResult)RedirectToAction("Index", new { receptionistId });
         }
 
-        return NotFound("Receptionist or Equipment not found.");
+        return (IActionResult)RedirectToAction("Index","Not Found");
     }
-   
-  }
+
 }

@@ -17,19 +17,19 @@ public class HomeController : Controller
         if (mail == validmail && password == validPassword)
         {
             // لو البيانات صحيحة
-            return RedirectToAction("Dashboard");
+            return (IActionResult)RedirectToAction("Dashboard");
         }
         else
         {
             // لو البيانات غلط، نعرض رسالة خطأ
             ViewBag.ErrorMessage = "اسم المستخدم أو كلمة المرور غير صحيحة!";
-            return View("Index");
+            return (IActionResult)View("Index");
         }
     }
 
     // صفحة لوحة التحكم
     public IActionResult Dashboard()
     {
-        return View(); // عرض صفحة لوحة التحكم
+        return (IActionResult)View(); // عرض صفحة لوحة التحكم
     }
 }
