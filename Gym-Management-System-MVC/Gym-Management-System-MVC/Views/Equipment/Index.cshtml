@@ -44,7 +44,55 @@
             </div>
         </form>
     </div>
-    <div class="equuipment-table">
-        <!--equuipment table-->
+    <div class="equuipment-table mt-3">
+        <div class="controls">
+            <h6>Show Entities:</h6>
+            <select class="rowsSelect" onchange="filterRows(event)">
+                <option value="all">all</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+        </div>
+
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>Equipment Name</th>
+                    <th>Total no</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Treadmill</td>
+                    <td>1</td>
+                    <td>Acitve</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+
+                <tr>
+                    <td>10 Dumbell</td>
+                    <td>3</td>
+                    <td>Active</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+                <tr>
+                    <td>15 Dumbell</td>
+                    <td>6</td>
+                    <td>Inactive</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+                <tr>
+                    <td>20 Dumbell</td>
+                    <td>12</td>
+                    <td>Active</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

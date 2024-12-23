@@ -188,9 +188,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="active-members">
-                  <!--Table members-->
-                </div>
               </div>
               <div class="col-12 col-lg-4 h-100">
                 <div id="calendar" class="calender">
@@ -319,10 +316,9 @@
             <table class="dataTable">
                 <thead>
                     <tr>
-                        <th> Plan Name</th>
+                        <th>Plan Name</th>
                         <th>Validity</th>
                         <th>Amount</th>
-                        
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -331,27 +327,39 @@
                       <td>1 Month</td>
                       <td>1</td>
                       <td>800</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
 
                     <tr>
                       <td>3 Month</td>
                       <td>3</td>
                       <td>2200</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                     <tr>
                       <td>6 Month</td>
                       <td>6</td>
                       <td>4300</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                     <tr>
                       <td>Annual</td>
                       <td>12</td>
                       <td>8500</td>
                   
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                 </tbody>
             </table>
@@ -469,41 +477,53 @@
                   <thead>
                       <tr>
                           <th>Name</th>
-                          <th>Coach ID</th>
                           <th>Contact</th>
-                          <th>Date Expiaration</th>
+                          <th>Specialty</th>
+                          <th>Email</th>
                           <th>Actions</th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
                         <td>Coach 1</td>
-                        <td>SFM2301N1</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
   
                       <tr>
                         <td>Coach 2</td>
-                        <td>SFM2301N2</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                       <tr>
                         <td>Coach 3</td>
-                        <td>SFM2301N3</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                       <tr>
                         <td>Coach 4</td>
-                        <td>SFM2301N4</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                   </tbody>
               </table>
@@ -683,30 +703,6 @@
             </table>
             </div>
           </div>
-          <div id="report" class="section container report">
-            <div class="text">
-              <h1>Sales Report</h1>
-            </div>
-            <div class="reportform">
-              <form class="row g-3">
-                <div class="col-md-4">
-                  <label for="from-date" class="form-label">From Date</label>
-                  <input type="date" class="form-control" id="from-date" />
-                </div>
-                <div class="col-md-4">
-                  <label for="todate" class="form-label">To Date</label>
-                  <input type="date" class="form-control" id="todate" />
-                </div>
-                <div class="col-md-4">
-                  <label for="total" class="form-label">Total</label>
-                  <input type="text" class="form-control" id="total" disabled />
-                </div>
-              </form>
-            </div>
-            <div class="sales-table mt-3">
-              <!--sales table-->
-            </div>
-          </div>
           <div
           id="Admin-profile"
           class="section container Admin-profile "
@@ -794,6 +790,70 @@
           <div class="mb-3">
             <label for="newadmin-pass" class="col-form-label">Password</label>
             <input type="password" class="form-control" id="newadmin-pass">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="save-new-admin" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="editCoach" tabindex="-1" aria-labelledby="editCoach" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editCoach">Edit Coach</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="newCoach-name" class="col-form-label">Coach Name</label>
+            <input type="text" class="form-control" name="newCoach-name" id="newCoach-name">
+          </div>
+          <div class="mb-3">
+            <label for="newcoach-phone" class="col-form-label">Phone Number</label>
+            <input type="text" class="form-control" name="newcoach-phone" id="newcoach-phone">
+          </div>
+          <div class="mb-3">
+            <label for="newcoach-Specialty" class="col-form-label">Specialty</label>
+            <input type="text" class="form-control" name="newcoach-Specialty" id="newcoach-Specialty">
+          </div>
+          <div class="mb-3">
+            <label for="newcoach-Email" class="col-form-label">Email</label>
+            <input type="email" class="form-control" name="newcoach-Email" id="newcoach-Email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" id="save-new-admin" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="editplan" tabindex="-1" aria-labelledby="editplan" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editplan">Edit Plan</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="newplan-name" class="col-form-label">Plan Name</label>
+            <input type="text" class="form-control" name="newplan-name" id="newplan-name">
+          </div>
+          <div class="mb-3">
+            <label for="newplan-Validity" class="col-form-label">Validity</label>
+            <input type="text" class="form-control" name="newplan-Validity" id="newcoach-Validity">
+          </div>
+          <div class="mb-3">
+            <label for="newplan-Amount" class="col-form-label">Amount</label>
+            <input type="text" class="form-control" name="newplan-Amount" id="newcplan-Amount">
           </div>
         </form>
       </div>

@@ -2,7 +2,61 @@
     <div class="text">
         <h1>Active Members</h1>
     </div>
-    <div class="member-table">
-        <!--member Table-->
+    <div class="member-table ">
+        <h2 style="color: white;margin-bottom:1rem;">Gym Members</h2>
+        <div class="controls">
+            <h6>Show Entities:</h6>
+            <select class="rowsSelect" onchange="filterRows(event)">
+                <option value="all">all</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+        </div>
+
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Member ID</th>
+                    <th>Date Enrolled</th>
+                    <th>Date Expiaration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Member 1</td>
+                    <td>SFM2301N1</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+
+                <tr>
+                    <td>Member 2</td>
+                    <td>SFM2301N2</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+                <tr>
+                    <td>Member 3</td>
+                    <td>SFM2301N3</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+                <tr>
+                    <td>Member 4</td>
+                    <td>SFM2301N4</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

@@ -391,3 +391,178 @@ form input, form select {
   padding: 5%;
   display: none;
 }
+
+.controls {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.member-table {
+    margin-left: 7%;
+    width: 85%;
+    background-color: #77749B;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.rowsSelect {
+    width: 15%;
+    position: relative;
+    right: 3%;
+    background-color: #5D57A3;
+    color: white;
+    border: #5D57A3 1px solid;
+    border-radius: 5px;
+}
+
+.searchInput {
+    border: #5D57A3 1px solid;
+    border-radius: 5px;
+    background-color: #5D57A3;
+    color: white;
+}
+
+.plan-table {
+    margin-left: 7%;
+    width: 85%;
+    background-color: #77749B;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.coach-table {
+    margin-left: 7%;
+    width: 85%;
+    background-color: #77749B;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.equuipment-table {
+    margin-left: 7%;
+    width: 85%;
+    background-color: #77749B;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.Edity-puttom {
+    background-color: white;
+    color: black;
+    width: 90%;
+    border-radius: 20px;
+}
+
+    .Edity-puttom a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .Edity-puttom:hover {
+        cursor: pointer;
+        background-color: #5D57A3;
+        transition: all ease 1s;
+    }
+
+    .Edity-puttom a:hover {
+        color: white;
+        transition: all ease 1s;
+    }
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .rowsSelect, .searchInput {
+        width: 100%;
+    }
+
+    .member-table, .plan-table, .coach-table, .equuipment-table {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .Edity-puttom {
+        width: auto;
+    }
+
+        .Edity-puttom a {
+            font-size: 12px;
+        }
+}
+
+@media (max-width: 768px) {
+    .searchInput, .rowsSelect {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchInput, .rowsSelect {
+        max-width: 250px;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+.Topnavpar {
+    height: 80px;
+}
+
+.topnav-list {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #1a1363;
+}
+
+.offcanvas-header {
+    height: 15%;
+}
+
+#topnavlogout {
+    color: black;
+    height: 40px;
+}
+
+    #topnavlogout:hover {
+        cursor: pointer;
+    }
