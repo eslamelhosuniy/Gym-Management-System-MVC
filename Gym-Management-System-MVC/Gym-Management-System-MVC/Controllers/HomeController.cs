@@ -3,11 +3,22 @@
 public class HomeController : Controller
 {
     // الصفحة الرئيسية أو لوحة التحكم
-    public ActionResult Index()
+    public ActionResult landingPage()
     {
         return View(); // عرض الصفحة الرئيسية
     }
-     [HttpPost]
+      public ActionResult Login()
+    {
+        return View(); // عرض الصفحة الرئيسية
+    }
+  
+    public interface IActionResult
+    {
+    }
+
+
+
+    [HttpPost]
     public IActionResult Login(string mail, string password)
     {
         // بيانات للمقارنة (مثال)
@@ -17,19 +28,19 @@ public class HomeController : Controller
         if (mail == validmail && password == validPassword)
         {
             // لو البيانات صحيحة
-            return RedirectToAction("Dashboard");
+            return (IActionResult)RedirectToAction("Dashboard");
         }
         else
         {
             // لو البيانات غلط، نعرض رسالة خطأ
             ViewBag.ErrorMessage = "اسم المستخدم أو كلمة المرور غير صحيحة!";
-            return View("Index");
+            return (IActionResult)View("Index");
         }
     }
 
     // صفحة لوحة التحكم
     public IActionResult Dashboard()
     {
-        return View(); // عرض صفحة لوحة التحكم
+        return (IActionResult)View(); // عرض صفحة لوحة التحكم
     }
 }

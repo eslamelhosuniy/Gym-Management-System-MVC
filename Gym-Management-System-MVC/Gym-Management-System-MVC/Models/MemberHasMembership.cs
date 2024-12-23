@@ -21,5 +21,10 @@ namespace Gym_Management_System_MVC.Models
     
         public virtual Member Member { get; set; }
         public virtual Membership Membership { get; set; }
+
+        public static implicit operator Membership(MemberHasMembership v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

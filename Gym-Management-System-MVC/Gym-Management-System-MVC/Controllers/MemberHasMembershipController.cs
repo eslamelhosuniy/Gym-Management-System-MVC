@@ -11,6 +11,7 @@ public class MemberHasMembershipController : Controller
     public ActionResult Index()
     {
         var memberHasMembership = db.MemberHasMemberships.ToList();
+        ViewBag.ShowNav = true;
         return View(memberHasMembership);
     }
 
@@ -18,6 +19,7 @@ public class MemberHasMembershipController : Controller
     {
         ViewBag.Members = db.Members.ToList();
         ViewBag.Memberships = db.Memberships.ToList();
+        ViewBag.ShowNav = true;
         return View();
     }
 
@@ -30,6 +32,7 @@ public class MemberHasMembershipController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(memberHasMembership);
     }
 

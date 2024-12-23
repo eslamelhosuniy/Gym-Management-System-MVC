@@ -1,6 +1,8 @@
 ﻿using Gym_Management_System_MVC.Models;
 using System;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 public class EquipmentController : Controller
@@ -11,12 +13,14 @@ public class EquipmentController : Controller
     public ActionResult Index()
     {
         var equipmentList = db.Equipments.ToList();
+        ViewBag.ShowNav = true;
         return View(equipmentList);
     }
 
     // إضافة جهاز جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
         return View();
     }
 
@@ -32,6 +36,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -43,6 +48,7 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -56,6 +62,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -67,17 +74,18 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
-    public async Task<IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
+    public async Task<HomeController.IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
     {
         // جلب Receptionist من الـ DB بناءً على الـ receptionistId
-        var receptionist = await _context.Receptionists
+        var receptionist = await db.Receptionists
             .FirstOrDefaultAsync(r => r.ReceptionistID == receptionistId);
 
         // جلب الـ Equipment بناءً على الـ equipmentId
-        var equipment = await _context.Equipments
+        var equipment = await db.Equipments
             .FirstOrDefaultAsync(e => e.EquipmentID == equipmentId);
 
         if (receptionist != null && equipment != null)
@@ -86,14 +94,13 @@ public class EquipmentController : Controller
             receptionist.Equipments.Add(equipment);
 
             // حفظ التغييرات في قاعدة البيانات
-            await _context.SaveChangesAsync();
+            await db.SaveChangesAsync();
 
             // إعادة توجيه إلى صفحة عرض البيانات أو صفحة أخرى
-            return RedirectToAction("Index", new { receptionistId });
+            return (HomeController.IActionResult)RedirectToAction("Index", new { receptionistId });
         }
 
-        return NotFound("Receptionist or Equipment not found.");
+        return (HomeController.IActionResult)RedirectToAction("Index","Not Found");
     }
-   
-  }
+
 }
