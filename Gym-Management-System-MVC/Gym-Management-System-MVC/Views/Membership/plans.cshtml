@@ -34,7 +34,107 @@
             </div>
         </form>
     </div>
-    <div class="plan-table">
-        <!--plan Table-->
+    <div style="margin-right: 60%;" class="plan-table mt-3 ">
+
+        <div class="controls">
+            <h6>Show Entities:</h6>
+            <select class="rowsSelect" onchange="filterRows(event)">
+                <option value="all">all</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+        </div>
+
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>Plan Name</th>
+                    <th>Validity</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 Month</td>
+                    <td>1</td>
+                    <td>800</td>
+                    <td>
+                        <button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3 Month</td>
+                    <td>3</td>
+                    <td>2200</td>
+                    <td>
+                        <button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6 Month</td>
+                    <td>6</td>
+                    <td>4300</td>
+                    <td>
+                        <button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Annual</td>
+                    <td>12</td>
+                    <td>8500</td>
+
+                    <td>
+                        <button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal fade" id="editplan" tabindex="-1" aria-labelledby="editplan" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editplan">Edit Plan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="newplan-name" class="col-form-label">Plan Name</label>
+                        <input type="text" class="form-control" name="newplan-name" id="newplan-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newplan-Validity" class="col-form-label">Validity</label>
+                        <input type="text" class="form-control" name="newplan-Validity" id="newcoach-Validity">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newplan-Amount" class="col-form-label">Amount</label>
+                        <input type="text" class="form-control" name="newplan-Amount" id="newcplan-Amount">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="save-new-admin" class="btn btn-primary">Save</button>
+            </div>
+        </div>
     </div>
 </div>

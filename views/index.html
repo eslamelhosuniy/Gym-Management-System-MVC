@@ -188,9 +188,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="active-members">
-                  <!--Table members-->
-                </div>
               </div>
               <div class="col-12 col-lg-4 h-100">
                 <div id="calendar" class="calender">
@@ -213,57 +210,40 @@
           </div>
           <div id="regeteration" class="section container regeteration">
             <div class="text">
-              <h3>Become a Member!</h3>
-              <h1>Register</h1>
+                <h3>Become a Member!</h3>
+                <h1>Register</h1>
             </div>
             <div class="regeterationform">
-              <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="member-name" class="form-label"
-                    >Name of Participant</label
-                  >
-                  <input type="text" class="form-control" id="member-name" />
-                </div>
-                <div class="col-md-6">
-                  <label for="date-of-join" class="form-label"
-                    >Date of Join</label
-                  >
-                  <input type="date" class="form-control" id="date-of-join" />
-                </div>
-                <div class="col-6">
-                  <label for="email-address" class="form-label"
-                    >Email Address</label
-                  >
-                  <input type="email" class="form-control" id="email-address" />
-                </div>
-                <div class="col-6">
-                  <label for="contact-no" class="form-label">Contact No.</label>
-                  <input type="text" class="form-control" id="contact-no" />
-                </div>
-                <div class="col-md-4">
-                  <label for="plan" class="form-label">Plan</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option value="Month">Month</option>
-                    <option value="3Month">3 Month</option>
-                    <option value="year">Year</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="Price" class="form-label">Price</label>
-                  <input type="text" class="form-control" id="Price" />
-                </div>
-                <div class="col-12 buttons">
-                  <button type="submit" id="add-member" class="btn btn-primary">
-                    Add Membership
-                  </button>
-                  <button type="button" id="cancel" class="btn btn-primary">
-                    cancel
-                  </button>
-                </div>
-              </form>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="member-name" class="form-label">Name of Participant</label>
+                        <input type="text" class="form-control" id="member-name" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email-address" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email-address" />
+                    </div>
+                    <div class="col-6">
+                        <label for="contact-no" class="form-label">Contact No.</label>
+                        <input type="text" class="form-control" id="contact-no" />
+                    </div>
+                    <div class="col-6">
+                        <label for="Address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="Address" />
+                    </div>
+                    <div class="col-12 buttons">
+                        <button type="submit" id="add-member" class="btn btn-primary">
+                            Add Membership
+                        </button>
+                        <button type="button" id="cancel" class="btn btn-primary">
+                            cancel
+                        </button>
+                    </div>
+        
+                </form>
             </div>
-          </div>
+        </div>
+        
           <div id="plan" class="section container plan">
             <div class="text mb-5">
               <button type="button" id="form-add-plan" class="btn btn-primary">
@@ -319,10 +299,9 @@
             <table class="dataTable">
                 <thead>
                     <tr>
-                        <th> Plan Name</th>
+                        <th>Plan Name</th>
                         <th>Validity</th>
                         <th>Amount</th>
-                        
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -331,27 +310,39 @@
                       <td>1 Month</td>
                       <td>1</td>
                       <td>800</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
 
                     <tr>
                       <td>3 Month</td>
                       <td>3</td>
                       <td>2200</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                     <tr>
                       <td>6 Month</td>
                       <td>6</td>
                       <td>4300</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                     <tr>
                       <td>Annual</td>
                       <td>12</td>
                       <td>8500</td>
                   
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td><button type="button" class="btn editplan btn-primary" data-bs-toggle="modal" data-bs-target="#editplan"
+                        data-bs-whatever="@mdo">
+                        Edit
+                      </button></td>
                     </tr>
                 </tbody>
             </table>
@@ -469,41 +460,53 @@
                   <thead>
                       <tr>
                           <th>Name</th>
-                          <th>Coach ID</th>
                           <th>Contact</th>
-                          <th>Date Expiaration</th>
+                          <th>Specialty</th>
+                          <th>Email</th>
                           <th>Actions</th>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
                         <td>Coach 1</td>
-                        <td>SFM2301N1</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
   
                       <tr>
                         <td>Coach 2</td>
-                        <td>SFM2301N2</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                       <tr>
                         <td>Coach 3</td>
-                        <td>SFM2301N3</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                       <tr>
                         <td>Coach 4</td>
-                        <td>SFM2301N4</td>
+                        <td>Jan 11</td>
                         <td>Jan 11</td>
                         <td>Feb 11</td>
-                        <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                        <td><button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                          data-bs-whatever="@mdo">
+                          Edit
+                        </button></td>
                       </tr>
                   </tbody>
               </table>
@@ -596,26 +599,38 @@
                       <td>Treadmill</td>
                       <td>1</td>
                       <td>Acitve</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
 
                     <tr>
                       <td>10 Dumbell</td>
                       <td>3</td>
                       <td>Active</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
                     <tr>
                       <td>15 Dumbell</td>
                       <td>6</td>
                       <td>Inactive</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
                     <tr>
                       <td>20 Dumbell</td>
                       <td>12</td>
                       <td>Active</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
+                        data-bs-whatever="@mdo">
+                     Edit
+                   </button></td>
                     </tr>
                 </tbody>
             </table>
@@ -643,9 +658,9 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Member ID</th>
-                        <th>Date Enrolled</th>
-                        <th>Date Expiaration</th>
+                        <th>Email Address</th>
+                        <th>Contact No.</th>
+                        <th>Address</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -655,7 +670,10 @@
                       <td>SFM2301N1</td>
                       <td>Jan 11</td>
                       <td>Feb 11</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
+                        data-bs-whatever="@mdo"  >
+                     Edit
+                   </button></td>
                     </tr>
 
                     <tr>
@@ -663,50 +681,36 @@
                       <td>SFM2301N2</td>
                       <td>Jan 11</td>
                       <td>Feb 11</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
                     <tr>
                       <td>Member 3</td>
                       <td>SFM2301N3</td>
                       <td>Jan 11</td>
                       <td>Feb 11</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
                     <tr>
                       <td>Member 4</td>
                       <td>SFM2301N4</td>
                       <td>Jan 11</td>
                       <td>Feb 11</td>
-                      <td><div class="Edity-puttom"><a href="">Edit</a></div></td>
+                      <td>  <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
+                        data-bs-whatever="@mdo"  >
+                        Edit
+                   </button></td>
                     </tr>
                 </tbody>
             </table>
             </div>
           </div>
-          <div id="report" class="section container report">
-            <div class="text">
-              <h1>Sales Report</h1>
-            </div>
-            <div class="reportform">
-              <form class="row g-3">
-                <div class="col-md-4">
-                  <label for="from-date" class="form-label">From Date</label>
-                  <input type="date" class="form-control" id="from-date" />
-                </div>
-                <div class="col-md-4">
-                  <label for="todate" class="form-label">To Date</label>
-                  <input type="date" class="form-control" id="todate" />
-                </div>
-                <div class="col-md-4">
-                  <label for="total" class="form-label">Total</label>
-                  <input type="text" class="form-control" id="total" disabled />
-                </div>
-              </form>
-            </div>
-            <div class="sales-table mt-3">
-              <!--sales table-->
-            </div>
-          </div>
+         
           <div
           id="Admin-profile"
           class="section container Admin-profile "

@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6">
                 <label for="coach-Email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="Email"  id="coach-Email" />
+                <input type="email" class="form-control" name="Email" id="coach-Email" />
             </div>
             <div class="col-md-6">
                 <label for="coach-phone" class="form-label">Phone Number</label>
@@ -38,7 +38,114 @@
             </div>
         </form>
     </div>
-    <div class="coach-table">
-        <!--Coach table-->
+    <div class="coach-table mt-3">
+        <div class="controls">
+            <h6>Show Entities:</h6>
+            <select class="rowsSelect" onchange="filterRows(event)">
+                <option value="all">all</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
+        </div>
+
+        <table class="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Specialty</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coach 1</td>
+                    <td>Jan 11</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td>
+                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Coach 2</td>
+                    <td>Jan 11</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td>
+                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Coach 3</td>
+                    <td>Jan 11</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td>
+                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Coach 4</td>
+                    <td>Jan 11</td>
+                    <td>Jan 11</td>
+                    <td>Feb 11</td>
+                    <td>
+                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
+                                data-bs-whatever="mdo">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal fade" id="editCoach" tabindex="-1" aria-labelledby="editCoach" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editCoach">Edit Coach</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="newCoach-name" class="col-form-label">Coach Name</label>
+                        <input type="text" class="form-control" name="newCoach-name" id="newCoach-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newcoach-phone" class="col-form-label">Phone Number</label>
+                        <input type="text" class="form-control" name="newcoach-phone" id="newcoach-phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newcoach-Specialty" class="col-form-label">Specialty</label>
+                        <input type="text" class="form-control" name="newcoach-Specialty" id="newcoach-Specialty">
+                    </div>
+                    <div class="mb-3">
+                        <label for="newcoach-Email" class="col-form-label">Email</label>
+                        <input type="email" class="form-control" name="newcoach-Email" id="newcoach-Email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="save-new-admin" class="btn btn-primary">Save</button>
+            </div>
+        </div>
     </div>
 </div>

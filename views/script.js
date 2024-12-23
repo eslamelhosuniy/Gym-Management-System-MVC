@@ -152,3 +152,102 @@ function searchTable(event) {
         rows[i].style.display = match ? '' : 'none'; 
     }
 }
+
+
+
+
+
+
+
+  
+    // استهداف كل أزرار Edit
+    const EditMemper = document.querySelectorAll(".EditMemper");
+
+    // إضافة حدث click لكل زر
+    EditMemper.forEach((button) => {
+      button.addEventListener("click", function () {
+        // الحصول على الصف الحالي
+        const row = this.closest("tr");
+
+        // استخراج البيانات من الأعمدة
+        const name = row.children[0].textContent.trim();
+        const EmailAddress = row.children[1].textContent.trim();
+        const ContactNo = row.children[2].textContent.trim();
+        const adress = row.children[3].textContent.trim();
+
+        // ملء الحقول في الفورم
+        document.getElementById("EditMember-name").value = name;
+        document.getElementById("EditMember-EmailAddress").value = EmailAddress;
+        document.getElementById("EditMember-ContactNo").value = ContactNo;
+        document.getElementById("EditMember-adress").value = adress;
+      });
+    });
+
+
+
+        // استهداف كل أزرار Edit
+        const Editequipment = document.querySelectorAll(".Editequipment");
+
+        // إضافة حدث click لكل زر
+        Editequipment.forEach((button) => {
+          button.addEventListener("click", function () {
+            // الحصول على الصف الحالي
+            const row = this.closest("tr");
+    
+            // استخراج البيانات من الأعمدة
+            const name = row.children[0].textContent.trim();
+            const Totalno = row.children[1].textContent.trim();
+            const Status = row.children[2].textContent.trim();
+              
+            // ملء الحقول في الفورم
+            document.getElementById("EditEquipment-name").value = name;
+            document.getElementById("EditEquipment-Totalno").value = Totalno;
+            document.getElementById("EditEquipment-Status").value = Status;
+            
+        });
+    });
+
+
+
+    // استهداف كل أزرار Edit
+    const editCoaches = document.querySelectorAll(".editCoach");
+
+    // إضافة حدث click لكل زر
+    editCoaches.forEach((button) => {
+      button.addEventListener("click", function () {
+        // الحصول على الصف الحالي
+        const row = this.closest("tr");
+
+        // استخراج البيانات من الأعمدة
+        const name = row.children[0].textContent.trim();
+        const phone = row.children[1].textContent.trim();
+        const Specialty = row.children[2].textContent.trim();
+        const email = row.children[3].textContent.trim();
+
+        // ملء الحقول في الفورم
+        document.getElementById("newCoach-name").value = name;
+        document.getElementById("newcoach-phone").value = phone;
+        document.getElementById("newcoach-Specialty").value = Specialty;
+        document.getElementById("newcoach-Email").value = email;
+      });
+    });
+    const editplans = document.querySelectorAll(".editCoach");
+
+    // إضافة حدث click لكل زر
+    editplans.forEach((button) => {
+      button.addEventListener("click", function () {
+        // الحصول على الصف الحالي
+        const row = this.closest("tr");
+
+        // استخراج البيانات من الأعمدة
+        const name = row.children[0].textContent.trim();
+        const Validity = row.children[1].textContent.trim();
+        const Amount = row.children[2].textContent.trim();
+
+        // ملء الحقول في الفورم
+        document.getElementById("newplan-name").value = name;
+        document.getElementById("newplan-Validity").value = Validity;
+        document.getElementById("newplan-Amount").value = Amount;
+      });
+    });
+

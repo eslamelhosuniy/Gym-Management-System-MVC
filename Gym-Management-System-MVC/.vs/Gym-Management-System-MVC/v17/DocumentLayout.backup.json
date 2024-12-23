@@ -3,56 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\memberhasmembershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\memberhasmembershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\scripts\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\scripts\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\views\\coach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\coach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\views\\member\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\member\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|c:\\users\\lap store\\documents\\github\\gym-management-system-mvc\\gym-management-system-mvc\\gym-management-system-mvc\\views\\membership\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\membership\\plans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\membershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\receptionistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\memberhasmembershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\memberhasmembershipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\controllers\\coachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\gym-management-system-mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8C20709-F7B9-4360-853E-41E116D232E2}|Gym-Management-System-MVC\\Gym-Management-System-MVC.csproj|solutionrelative:gym-management-system-mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,37 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "paymentController.cs",
-              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\paymentController.cs",
-              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\paymentController.cs",
-              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\paymentController.cs",
-              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\paymentController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T17:35:27.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MembershipController.cs",
-              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
-              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
-              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
-              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T17:35:13.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "MemberHasMembershipController.cs",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MemberHasMembershipController.cs",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\MemberHasMembershipController.cs",
@@ -100,12 +82,11 @@
               "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\MemberHasMembershipController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwCIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T17:34:11.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T17:34:11.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\DashboardController.cs",
@@ -113,38 +94,37 @@
               "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T17:33:37.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T17:33:37.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Member\\Index.cshtml",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Member\\Index.cshtml",
               "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Member\\Index.cshtml",
               "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Member\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAIwD0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-23T17:28:16.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MemberController.cs",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MemberController.cs",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\MemberController.cs",
               "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MemberController.cs",
               "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\MemberController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T17:21:59.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ReceptionistController.cs",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\ReceptionistController.cs",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\ReceptionistController.cs",
@@ -152,25 +132,101 @@
               "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\ReceptionistController.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAEwF4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T15:51:24.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T15:51:24.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "script.js",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Scripts\\script.js",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Scripts\\script.js",
               "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Scripts\\script.js",
               "RelativeToolTip": "Gym-Management-System-MVC\\Scripts\\script.js",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAADwv9EAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-12-23T15:47:29.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAF4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T17:10:42.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAD4vw4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T14:29:18.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T15:45:11.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "plans.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Membership\\plans.cshtml",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Membership\\plans.cshtml",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Membership\\plans.cshtml",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Membership\\plans.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T18:13:50.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Member\\Create.cshtml",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Member\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Member\\Create.cshtml",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Member\\Create.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T18:13:57.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MembershipController.cs",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\MembershipController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAtwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:35:13.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Coachcontroller.cs",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\Coachcontroller.cs",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\Coachcontroller.cs",
@@ -183,33 +239,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
-              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
-              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Equipment\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T17:10:42.028Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "paymentController.cs",
+              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\paymentController.cs",
+              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\paymentController.cs",
+              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\paymentController.cs",
+              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\paymentController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T17:35:27.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
-              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
-              "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Coach\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T15:45:11.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Views\\Shared\\_Layout.cshtml",
@@ -217,21 +259,7 @@
               "RelativeToolTip": "Gym-Management-System-MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAYwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T15:54:59.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EquipmentController.cs",
-              "DocumentMoniker": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
-              "RelativeDocumentMoniker": "Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
-              "ToolTip": "C:\\Users\\Lap store\\Documents\\GitHub\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
-              "RelativeToolTip": "Gym-Management-System-MVC\\Controllers\\EquipmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:29:18.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T15:54:59.903Z"
             }
           ]
         }
