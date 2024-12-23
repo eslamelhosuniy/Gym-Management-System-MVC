@@ -11,9 +11,9 @@ public class MemberController : Controller
     // أكشن لعرض الأعضاء
     public ActionResult Index()
     {
-        //var members = db.Members.ToList();
+        var members = db.Members.ToList();
         ViewBag.ShowNav = true;
-        return View();
+        return View(members);
     }
 
     // أكشن لإضافة عضو جديد

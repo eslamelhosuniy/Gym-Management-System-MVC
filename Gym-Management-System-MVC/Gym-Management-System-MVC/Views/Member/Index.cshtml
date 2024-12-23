@@ -1,13 +1,15 @@
-﻿<div id="viewMembers" class="section container viewMembers">
+﻿@model List<Gym_Management_System_MVC.Models.Member>
+
+<div id="viewMembers" class="section container viewMembers">
     <div class="text">
         <h1>Active Members</h1>
     </div>
-    <div class="member-table ">
-        <h2 style="color: white;margin-bottom:1rem;">Gym Members</h2>
+    <div class="member-table">
+        <h2 style="color: white; margin-bottom: 1rem;">Gym Members</h2>
         <div class="controls">
             <h6>Show Entities:</h6>
             <select class="rowsSelect" onchange="filterRows(event)">
-                <option value="all">all</option>
+                <option value="all">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -27,59 +29,26 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach (var member in Model)<!-- المرور على قائمة الأعضاء -->
+                {
                 <tr>
-                    <td>Member 1</td>
-                    <td>SFM2301N1</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
+                    <td>@member.Name</td>
+                    <td>@member.Email</td>
+                    <td>@member.PhoneNumber</td>
+                    <td>@member.Address</td>
                     <td>
-                        <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
-                                data-bs-whatever="mdo">
+                        <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#EditMemper" data-id="@member.ID">
                             Edit
                         </button>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>Member 2</td>
-                    <td>SFM2301N2</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Member 3</td>
-                    <td>SFM2301N3</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Member 4</td>
-                    <td>SFM2301N4</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn EditMemper btn-primary" data-bs-toggle="modal" data-bs-target="#EditMemper"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
+                }
             </tbody>
         </table>
     </div>
 </div>
+
 <div class="modal fade" id="EditMemper" tabindex="-1" aria-labelledby="EditMemper" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

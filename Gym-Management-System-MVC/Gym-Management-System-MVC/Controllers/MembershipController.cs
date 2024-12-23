@@ -1,4 +1,5 @@
 ﻿using Gym_Management_System_MVC.Models;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -9,10 +10,16 @@ public class MembershipController : Controller
     // عرض كل العضويات
     public ActionResult plans()
     {
-        var memberships = db.Memberships.ToList();
+        //var memberships = db.Memberships.ToList();
+        var testCoaches = new List<Membership>
+    {
+        new Membership {  Type = "Fitness", Cost = 12 },
+        new Membership {  Type = "Yoga", Cost = 12 },
+        new Membership {  Type = "Strength Training", Cost =12}
+    };
         ViewBag.ShowNav = true;
 
-        return View(memberships);
+        return View(testCoaches);
     }
 
     // عرض تفاصيل عضوية

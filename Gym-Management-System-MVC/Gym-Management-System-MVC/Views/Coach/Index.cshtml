@@ -1,4 +1,6 @@
-﻿<div id="coaches" class="section container coaches">
+﻿
+
+<div id="coaches" class="section container coaches">
     <div class="text mb-5">
         <button type="button" id="form-add-coach" class="btn btn-primary">
             Add Coach
@@ -62,55 +64,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Coach 1</td>
-                    <td>Jan 11</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Coach 2</td>
-                    <td>Jan 11</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Coach 3</td>
-                    <td>Jan 11</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Coach 4</td>
-                    <td>Jan 11</td>
-                    <td>Jan 11</td>
-                    <td>Feb 11</td>
-                    <td>
-                        <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal" data-bs-target="#editCoach"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
+                @foreach (var coach in Model)
+                {
+            <tr>
+                <td>@coach.Name</td>
+                <td>@coach.PhoneNumber</td>
+                <td>@coach.Specialty</td>
+                <td>@coach.Email</td>
+                <td>
+                    <button type="button" class="btn editCoach btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#editCoach">
+                        Edit
+                    </button>
+   
+                </td>
+            </tr>}
             </tbody>
         </table>
     </div>

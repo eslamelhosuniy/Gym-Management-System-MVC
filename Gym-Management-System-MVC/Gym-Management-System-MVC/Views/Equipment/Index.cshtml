@@ -1,4 +1,5 @@
-﻿<div id="Inventory" class="section container Inventory">
+﻿ @model IEnumerable<Gym_Management_System_MVC.Models.Equipment>
+<div id="Inventory" class="section container Inventory">
     <div class="text mb-5">
         <button type="button"
                 id="form-add-equipment"
@@ -58,6 +59,7 @@
             <input type="text" class="searchInput" onkeyup="searchTable(event)" placeholder="Search...">
         </div>
 
+
         <table class="dataTable">
             <thead>
                 <tr>
@@ -68,53 +70,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Treadmill</td>
-                    <td>1</td>
-                    <td>Acitve</td>
-                    <td>
-                        <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>10 Dumbell</td>
-                    <td>3</td>
-                    <td>Active</td>
-                    <td>
-                        <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>15 Dumbell</td>
-                    <td>6</td>
-                    <td>Inactive</td>
-                    <td>
-                        <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20 Dumbell</td>
-                    <td>12</td>
-                    <td>Active</td>
-                    <td>
-                        <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment"
-                                data-bs-whatever="mdo">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
+                @foreach (var equipment in Model)
+                {
+                    <tr>
+                        <td>@equipment.Name</td>
+                        <td>1</td>
+                        <td>@equipment.Status</td>
+                        <td>
+                            <button type="button" class="btn Editequipment btn-primary" data-bs-toggle="modal" data-bs-target="#Editequipment" data-bs-whatever="mdo">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
+
     </div>
 </div>
 
