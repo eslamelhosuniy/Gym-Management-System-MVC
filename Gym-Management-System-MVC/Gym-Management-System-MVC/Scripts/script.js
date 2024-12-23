@@ -155,6 +155,46 @@ function displayForm(displayButtonId, closeButtonId, formClass) {
     });
 }
 
+const editCoaches = document.querySelectorAll(".editCoach");
+
+// إضافة حدث click لكل زر
+editCoaches.forEach((button) => {
+    button.addEventListener("click", function () {
+        // الحصول على الصف الحالي
+        const row = this.closest("tr");
+
+        // استخراج البيانات من الأعمدة
+        const name = row.children[0].textContent.trim();
+        const phone = row.children[1].textContent.trim();
+        const Specialty = row.children[2].textContent.trim();
+        const email = row.children[3].textContent.trim();
+
+        // ملء الحقول في الفورم
+        document.getElementById("newCoach-name").value = name;
+        document.getElementById("newcoach-phone").value = phone;
+        document.getElementById("newcoach-Specialty").value = Specialty;
+        document.getElementById("newcoach-Email").value = email;
+    });
+});
+const editplans = document.querySelectorAll(".editCoach");
+
+// إضافة حدث click لكل زر
+editplans.forEach((button) => {
+    button.addEventListener("click", function () {
+        // الحصول على الصف الحالي
+        const row = this.closest("tr");
+
+        // استخراج البيانات من الأعمدة
+        const name = row.children[0].textContent.trim();
+        const Validity = row.children[1].textContent.trim();
+        const Amount = row.children[2].textContent.trim();
+
+        // ملء الحقول في الفورم
+        document.getElementById("newplan-name").value = name;
+        document.getElementById("newplan-Validity").value = Validity;
+        document.getElementById("newplan-Amount").value = Amount;
+    });
+});
 
 
 
