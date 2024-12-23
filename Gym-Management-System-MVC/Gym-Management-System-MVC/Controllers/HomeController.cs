@@ -1,35 +1,60 @@
-﻿using System.Web.Mvc;
+﻿using Gym_Management_System_MVC.Models;
+using System.Web.Mvc;
+using System.Linq;
 
 public class HomeController : Controller
 {
+    private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
+
     // الصفحة الرئيسية أو لوحة التحكم
-    public ActionResult Index()
+    public ActionResult landingPage()
     {
         return View(); // عرض الصفحة الرئيسية
     }
-     [HttpPost]
-    public IActionResult Login(string mail, string password)
+      public ActionResult Login()
+    {
+        return View(); // عرض الصفحة الرئيسية
+    }
+  
+    public interface IActionResult
+    {
+    }
+
+
+    [HttpPost]
+    public ActionResult Logining(string mail, string password)
     {
         // بيانات للمقارنة (مثال)
-        string validmail = "admin123@gmail.com";
+        string validMail = "admin123@gmail.com";
         string validPassword = "12345";
 
-        if (mail == validmail && password == validPassword)
+        // البحث عن المستخدم بالبريد الإلكتروني
+        Receptionist receptionist = db.Receptionists.FirstOrDefault(r => r.Email == mail);
+
+
+        // التحقق من الحقول
+        if (string.IsNullOrEmpty(mail) || string.IsNullOrEmpty(password))
+        {
+            ViewBag.ErrorMessage = "البريد الإلكتروني وكلمة المرور مطلوبان!";
+            return View("Index");
+        }
+
+        // التحقق من صحة البيانات
+        if ((mail == validMail && password == validPassword) ||
+            (receptionist != null && receptionist.PasswordHash == password))
         {
             // لو البيانات صحيحة
-            return (IActionResult)RedirectToAction("Dashboard");
+            return RedirectToAction("Index", "Dashboard");
         }
         else
         {
-            // لو البيانات غلط، نعرض رسالة خطأ
+            // لو البيانات خاطئة
             ViewBag.ErrorMessage = "اسم المستخدم أو كلمة المرور غير صحيحة!";
-            return (IActionResult)View("Index");
+            return View("Index");
         }
     }
 
-    // صفحة لوحة التحكم
-    public IActionResult Dashboard()
-    {
-        return (IActionResult)View(); // عرض صفحة لوحة التحكم
-    }
+
+
+
 }

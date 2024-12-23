@@ -7,7 +7,7 @@
         </button>
     </div>
     <div class="Inventoryform">
-        <form class="row g-3">
+        <form class="row g-3" action="@Url.Action("Create", "Equipment")" method="post">
             <div id="close-form-Inventory">
                 <button type="button"
                         id="btn-close-Inventory"
@@ -16,21 +16,22 @@
             </div>
             <div class="col-md-6">
                 <label for="Equipment-name" class="form-label">Equipment Name</label>
-                <input type="text" class="form-control" id="Equipment-name" />
+                <input type="text" class="form-control"  name="Name" id="Equipment-name" />
             </div>
             <div class="col-md-6">
                 <label for="LastMaintanceDate" class="form-label">LastMaintanceDate</label>
                 <input type="date"
                        class="form-control"
-                       id="LastMaintanceDate" />
+                       id="LastMaintanceDate"
+                       name="LastMaintenanceDate"/>
             </div>
             <div class="col-md-6">
                 <label for="Status" class="form-label">Status</label>
-                <input type="text" class="form-control" id="Status" />
+                <input type="text" class="form-control" name="Status" id="Status" />
             </div>
             <div class="col-md-6">
                 <label for="PruchaseDate" class="form-label">PruchaseDate</label>
-                <input type="date" class="form-control" id="PruchaseDate" />
+                <input type="date" class="form-control" name="PurchaseDate" id="PruchaseDate" />
             </div>
             <div class="col-12 buttons">
                 <button type="submit"

@@ -13,17 +13,18 @@ public class EquipmentController : Controller
     public ActionResult Index()
     {
         var equipmentList = db.Equipments.ToList();
+        ViewBag.ShowNav = true;
         return View(equipmentList);
     }
 
     // إضافة جهاز جديد
     public ActionResult Create()
     {
+        ViewBag.ShowNav = true;
         return View();
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public ActionResult Create(Equipment equipment)
     {
         if (ModelState.IsValid)
@@ -34,6 +35,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -45,11 +47,12 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
+
     public ActionResult Edit(Equipment equipment)
     {
         if (ModelState.IsValid)
@@ -58,6 +61,7 @@ public class EquipmentController : Controller
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
@@ -69,10 +73,11 @@ public class EquipmentController : Controller
         {
             return HttpNotFound();
         }
+        ViewBag.ShowNav = true;
         return View(equipment);
     }
 
-    public async Task<IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
+    public async Task<HomeController.IActionResult> AssignEquipmentToReceptionist(Guid receptionistId, Guid equipmentId)
     {
         // جلب Receptionist من الـ DB بناءً على الـ receptionistId
         var receptionist = await db.Receptionists
@@ -91,10 +96,10 @@ public class EquipmentController : Controller
             await db.SaveChangesAsync();
 
             // إعادة توجيه إلى صفحة عرض البيانات أو صفحة أخرى
-            return (IActionResult)RedirectToAction("Index", new { receptionistId });
+            return (HomeController.IActionResult)RedirectToAction("Index", new { receptionistId });
         }
 
-        return (IActionResult)RedirectToAction("Index","Not Found");
+        return (HomeController.IActionResult)RedirectToAction("Index","Not Found");
     }
 
 }

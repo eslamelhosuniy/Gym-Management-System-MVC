@@ -4,20 +4,21 @@
         <h1>Add Payment</h1>
     </div>
     <div class="paymentform">
-        <form class="row g-3">
+        <form class="row g-3" action="@Url.Action("Create", "payment")" method="post">
             <div class="col-md-6">
                 <label for="member-phone" class="form-label">Phone of member</label>
-                <input type="text" class="form-control" id="member-name" />
+                <input type="text" class="form-control" name="MemberPhone" id="member-name" />
             </div>
             <div class="col-md-6">
                 <label for="date-of-payment" class="form-label">Date of Payment</label>
                 <input type="date"
                        class="form-control"
+                       name="Date"
                        id="date-of-payment" />
             </div>
             <div class="col-md-4">
                 <label for="pay-method" class="form-label">Pay Method</label>
-                <select id="pay-method" class="form-select">
+                <select id="pay-method" class="form-select" name="PaymentMethod">
                     <option selected>Choose...</option>
                     <option value="Cash Money">Cash Money</option>
                     <option value="Vodafone cash">Vodafone Cash</option>
@@ -26,7 +27,7 @@
             </div>
             <div class="col-md-2">
                 <label for="amount" class="form-label">Amount</label>
-                <input type="text" class="form-control" id="amount" />
+                <input type="text" class="form-control" name="Amount" id="amount" />
             </div>
             <div class="col-12 buttons">
                 <button type="submit"

@@ -7,7 +7,7 @@ public class MembershipController : Controller
     private GYM_ManagmentEntities db = new GYM_ManagmentEntities();
 
     // عرض كل العضويات
-    public ActionResult Index()
+    public ActionResult plans()
     {
         var memberships = db.Memberships.ToList();
         ViewBag.ShowNav = true;
@@ -38,7 +38,7 @@ public class MembershipController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
+
     public ActionResult Create(Membership membership)
     {
         if (ModelState.IsValid)
@@ -66,7 +66,7 @@ public class MembershipController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
+
     public ActionResult Edit(Membership membership)
     {
         if (ModelState.IsValid)
@@ -94,7 +94,7 @@ public class MembershipController : Controller
     }
 
     [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
+
     public ActionResult DeleteConfirmed(int id)
     {
         var membership = db.Memberships.Find(id);

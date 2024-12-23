@@ -38,12 +38,21 @@ public class PaymentController : Controller
         return View();
     }
 
+    public Member SearchByMemberPhone(string MemberPhone)
+    {
+        Member Member = db.Members.Find(MemberPhone);
+        return Member;
+    }
+
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult Create(Payment payment)
+
+    public ActionResult Create(Payment payment, string MemberPhone)
     {
         if (ModelState.IsValid)
         {
+            Member Member = SearchByMemberPhone(MemberPhone);
+            payment.MemberID = Member.MemberID;
+            payment.Member = Member;
             payment.PaymentID = Guid.NewGuid(); // توليد ID جديد
             payment.Date = System.DateTime.Now; // تعيين تاريخ الدفع الحالي
             db.Payments.Add(payment);
@@ -71,7 +80,7 @@ public class PaymentController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
+
     public ActionResult Edit(Payment payment)
     {
         if (ModelState.IsValid)
@@ -100,7 +109,7 @@ public class PaymentController : Controller
     }
 
     [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
+
     public ActionResult DeleteConfirmed(Guid id)
     {
         var payment = db.Payments.Find(id);

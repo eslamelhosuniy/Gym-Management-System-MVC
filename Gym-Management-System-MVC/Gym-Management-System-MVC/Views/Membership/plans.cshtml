@@ -5,7 +5,7 @@
         </button>
     </div>
     <div class="planform">
-        <form class="row g-3">
+        <form class="row g-3" action="@Url.Action("Create", "Membership")" method="post">
             <div id="close-form-plan">
                 <button type="button"
                         id="btn-close-plan"
@@ -14,15 +14,15 @@
             </div>
             <div class="col-md-6">
                 <label for="plan-name" class="form-label">Plan Name</label>
-                <input type="text" class="form-control" id="plan-name" />
+                <input type="text" class="form-control" name="Type" id="plan-name" />
             </div>
             <div class="col-md-6">
                 <label for="Validity" class="form-label">Validity</label>
-                <input type="text" class="form-control" id="Validity" />
+                <input type="text" class="form-control"  id="Validity" />
             </div>
             <div class="col-md-6">
                 <label for="amount" class="form-label">Amount</label>
-                <input type="email" class="form-control" id="amount" />
+                <input type="email" class="form-control" name="Cost" id="amount" />
             </div>
             <div class="col-12 buttons">
                 <button type="submit" id="add-plan" class="btn btn-primary">

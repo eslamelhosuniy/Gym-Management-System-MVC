@@ -3,37 +3,73 @@ function loginPage() {
     window.location.href = "login.html"
 }
 
-document.querySelectorAll(".sideButton").forEach((e) => {
-    e.classList.remove("active")
-})
+document.addEventListener("DOMContentLoaded", () => {
+    // إزالة الـ active من جميع الأزرار الجانبية
+    document.querySelectorAll(".sideButton").forEach((e) => {
+        e.classList.remove("active");
+    });
 
-if (document.getElementById("form-add-coach")) {
-    document.querySelector(".sideButton[target='coaches']").classList.add('active');
+    // التحقق من العناصر وإضافة الـ active بناءً على الحالة
+    if (document.getElementById("form-add-coach")) {
+        const sideButton = document.querySelector(".sideButton[target='coaches']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+        displayForm("form-add-coach", "btn-close-coach", "coachform");
 
-    displayForm("form-add-coach", "btn-close-coach", "coachform");
-}else if (document.getElementById("form-add-plan")) {
-    document.querySelector(".sideButton[target='plan']").classList.add('active');
+    } else if (document.getElementById("form-add-plan")) {
+        const sideButton = document.querySelector(".sideButton[target='plan']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+        displayForm("form-add-plan", "btn-close-plan", "planform");
 
-    displayForm("form-add-plan", "btn-close-plan", "planform");
-}else if (document.getElementById("form-add-equipment")) {
-    document.querySelector(".sideButton[target='Inventory']").classList.add('active');
+    } else if (document.getElementById("form-add-equipment")) {
+        const sideButton = document.querySelector(".sideButton[target='Inventory']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+        displayForm("form-add-equipment", "btn-close-Inventory", "Inventoryform");
 
-    displayForm("form-add-equipment", "btn-close-Inventory", "Inventoryform");
-}else if (document.getElementById("edit-profile-button")) {
-    document.querySelector(".sideButton[target='Admin-profile']").classList.add('active');
+    } else if (document.getElementById("edit-profile-button")) {
+        const sideButton = document.querySelector(".sideButton[target='Admin-profile']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+        displayForm("edit-profile-button", "cancel-edit", "profile-edit-form");
 
-    displayForm("edit-profile-button", "cancel-edit", "profile-edit-form");
-} else if (document.getElementById("dashHome")) {
-    document.querySelector(".sideButton[target='dashHome']").classList.add('active');
-} else if (document.getElementById("regeteration")) {
-    document.querySelector(".sideButton[target='regeteration']").classList.add('active');
-} else if (document.getElementById("payment")) {
-    document.querySelector(".sideButton[target='payment']").classList.add('active');
-} else if (document.getElementById("viewMembers")) {
-    document.querySelector(".sideButton[target='viewMembers']").classList.add('active');
-} else if (document.getElementById("report")) {
-    document.querySelector(".sideButton[target='report']").classList.add('active');
-}
+    } else if (document.getElementById("dashHome")) {
+        const sideButton = document.querySelector(".sideButton[target='dashHome']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+
+    } else if (document.getElementById("regeteration")) {
+        const sideButton = document.querySelector(".sideButton[target='regeteration']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+
+    } else if (document.getElementById("payment")) {
+        const sideButton = document.querySelector(".sideButton[target='payment']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+
+    } else if (document.getElementById("viewMembers")) {
+        const sideButton = document.querySelector(".sideButton[target='viewMembers']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+
+    } else if (document.getElementById("report")) {
+        const sideButton = document.querySelector(".sideButton[target='report']");
+        if (sideButton) {
+            sideButton.classList.add('active');
+        }
+    }
+});
+
 
 
 //chartes

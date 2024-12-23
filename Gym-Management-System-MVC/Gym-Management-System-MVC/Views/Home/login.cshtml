@@ -3,15 +3,14 @@
     <div class="container">
         <div class="row">
             <div class="col login">
-                <form>
-                    <legend>SIGN-IN</legend>
+                <form  action="@Url.Action("Logining", "Home")" method="post">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="email">
+                        <input type="email" class="form-control" name="mail" id="email" aria-describedby="email">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <input type="password" class="form-control" name="password" id="password">
                     </div>
                     <div class="mb-3 form-check">
                         <div class="check">
@@ -21,7 +20,7 @@
                         </div>
                         <a href="#">forget password?</a>
                     </div>
-                    <button type="button" id="sendData" class="btn btn-primary">Login</button>
+                    <button type="submit" id="sendData" class="btn btn-primary">Login</button>
                 </form>
             </div>
             <div class="col logo">
@@ -31,38 +30,4 @@
         </div>
     </div>
 
-    <script>
-        let submitButton = document.getElementById("sendData");
-        let remember = document.getElementById("remember")
-       //// loaddata()
-
-
-
-        submitButton.addEventListener("click", function () {
-            let email = document.getElementById("email").value;
-            let pass = document.getElementById("password").value;
-            let emailReg = /\S+\S+\.\S+/;
-            let passReg = /.{8,}/;
-            if (emailReg.test(email) && passReg.test(pass)) {
-                console.log("Login succesful")
-            } else {
-                console.log("Eror in email or password")
-                console.log(email)
-                console.log(pass)
-            }
-            if (remember.checked) {
-                localStorage.setItem("userName", email)
-                localStorage.setItem("password", pass)
-            }
-        })
-
-        function loaddata() {
-            let user = localStorage.getItem("userName")
-            let password = localStorage.getItem("password")
-            document.getElementById("email").value = user
-            document.getElementById("password").value = password
-            submitButton.click()
-            console.log("done")
-            window.location.href = "./nav.cshtml"
-        }
-    </script>
+  

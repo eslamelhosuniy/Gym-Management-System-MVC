@@ -12,7 +12,7 @@ namespace Gym_Management_System_MVC.Controllers
         {
             // جلب آخر 5 أعضاء مسجلين (مرتبين من الأحدث إلى الأقدم)
             var recentMembers = db.Members
-                                  .OrderByDescending(m => m.Id) // ترتيب تنازلي حسب الـ ID (أو تاريخ التسجيل لو متوفر)
+                                  .OrderByDescending(m => m.MemberID) // ترتيب تنازلي حسب الـ ID (أو تاريخ التسجيل لو متوفر)
                                   .Take(5) // جلب آخر 5 فقط
                                   .ToList();
 
@@ -22,16 +22,15 @@ namespace Gym_Management_System_MVC.Controllers
                             .ToList();
 
             // إرسال البيانات إلى الـ View باستخدام ViewBag
+            var equipments = db.Equipments.ToList(); // جلب جميع الأجهزة من قاعدة البيانات
             ViewBag.RecentMembers = recentMembers;
             ViewBag.Coaches = coaches;
+            ViewBag.Equipments = equipments;
 
+            ViewBag.ShowNav = true;
             return View();
         }
-        public ActionResult Index()
-        {
-            var equipments = db.Equipments.ToList(); // جلب جميع الأجهزة من قاعدة البيانات
-            return View(equipments); // عرض البيانات في الـ View
-        }
+       
         public ActionResult CalculateSale()
         {
             // جلب عدد الأعضاء في قاعدة البيانات
@@ -42,7 +41,7 @@ namespace Gym_Management_System_MVC.Controllers
 
             // تمرير قيمة الـ Sale للـ View
             ViewBag.Sale = sale;
-
+            ViewBag.ShowNav = true;
             return View(); // عرض النتيجة في الـ View
         }
     }

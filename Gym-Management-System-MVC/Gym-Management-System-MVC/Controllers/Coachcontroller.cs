@@ -19,7 +19,7 @@ public class CoachController : Controller
     public ActionResult Create()
     {
         ViewBag.ShowNav = true;
-        return View();
+        return Index();
     }
 
     [HttpPost]
@@ -46,7 +46,7 @@ public class CoachController : Controller
         ViewBag.ShowNav = true;
         return View(coach); // عرض بيانات المدرب في النموذج
     }
-
+    
     [HttpPost]
     public ActionResult Edit(Coach coach)
     {
@@ -68,6 +68,7 @@ public class CoachController : Controller
         {
             return HttpNotFound(); // في حالة عدم العثور على المدرب
         }
+        ViewBag.ShowNav = true;
         return View(coach); // عرض بيانات المدرب في النموذج
     }
 

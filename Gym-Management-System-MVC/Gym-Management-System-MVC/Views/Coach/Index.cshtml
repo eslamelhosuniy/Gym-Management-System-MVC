@@ -5,7 +5,7 @@
         </button>
     </div>
     <div class="coachform">
-        <form class="row g-3">
+        <form class="row g-3" action="@Url.Action("Create", "Coach")" method="post">
             <div id="close-form-coach">
                 <button type="button"
                         id="btn-close-coach"
@@ -14,19 +14,19 @@
             </div>
             <div class="col-md-6">
                 <label for="coach-name" class="form-label">Coach Name</label>
-                <input type="text" class="form-control" id="coach-name" />
+                <input type="text" class="form-control" name="Name" id="coach-name" />
             </div>
             <div class="col-md-6">
                 <label for="coach-Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="coach-Email" />
+                <input type="email" class="form-control" name="Email"  id="coach-Email" />
             </div>
             <div class="col-md-6">
                 <label for="coach-phone" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="coach-phone" />
+                <input type="text" class="form-control" name="PhoneNumber" id="coach-phone" />
             </div>
             <div class="col-md-6">
                 <label for="Specialty" class="form-label">Specialty</label>
-                <input type="text" class="form-control" id="Specialty" />
+                <input type="text" class="form-control" name="Specialty" id="Specialty" />
             </div>
             <div class="col-12 buttons">
                 <button type="submit" id="add-coach" class="btn btn-primary">

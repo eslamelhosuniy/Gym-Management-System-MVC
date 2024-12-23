@@ -241,9 +241,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Coachcontroller.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\EquipmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MemberController .cs" />
+    <Compile Include="Controllers\MemberController.cs" />
     <Compile Include="Controllers\MemberHasMembershipController.cs" />
     <Compile Include="Controllers\MembershipController.cs" />
     <Compile Include="Controllers\paymentController.cs" />
@@ -393,7 +394,6 @@
     <Content Include="Views\Coach\Index.cshtml" />
     <Content Include="Views\Equipment\Index.cshtml" />
     <Content Include="Views\Dashboard\index.cshtml" />
-    <None Include="Views\Home\DashBoard.cshtml" />
     <None Include="Views\Home\landingPage.cshtml" />
     <Content Include="Content\lbstyle.css" />
     <Content Include="Content\login.css" />

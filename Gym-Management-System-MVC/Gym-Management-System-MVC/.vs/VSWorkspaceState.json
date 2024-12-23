@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\Views",
+    "\\Views\\Coach",
+    "\\Views\\Dashboard"
   ],
+  "SelectedNode": "\\Gym-Management-System-MVC.csproj",
   "PreviewInSolutionExplorer": false
 }
